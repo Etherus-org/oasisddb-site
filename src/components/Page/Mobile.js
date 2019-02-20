@@ -28,7 +28,7 @@ const Page = ({
 
         <div className={styles.HeaderContainer}>
           <img
-            alt="Ties.DB"
+            alt="OasisDDB"
             className={styles.HeaderLogo}
             src={require('./assets/logo.svg')}
           />

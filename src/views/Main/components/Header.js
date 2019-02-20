@@ -31,7 +31,7 @@ const MainHeader = ({
           <br />
           boundless opportunities
           <br />
-          with Ties.DB
+          with OasisDDB
         </div>
 
         <div className={styles.Slogan}>

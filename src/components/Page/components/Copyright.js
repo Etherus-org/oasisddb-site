@@ -14,14 +14,14 @@ const PageCopyright = ({ social }) => (
       <div className={styles.Company}>
         <a href="/">
           <img
-            alt="Ties.DB"
+            alt="OasisDDB"
             className={styles.Logo}
             src={require('../assets/logo_dark.svg')}
           />
         </a>
 
         <div className={styles.CompanyInfo}>
-          Ties.BV. Limited liability company. KvK-nummer: 69555176
+          OasisDDB. Limited liability company. KvK-nummer: 69555176
         </div>
       </div>
 
@@ -58,7 +58,7 @@ const PageCopyright = ({ social }) => (
       </div>
 
       <div className={styles.CompanyInfoMobile}>
-        Ties.BV. Limited liability company.
+        OasisDDB. Limited liability company.
         <br />
         KvK-nummer: 69555176
       </div>

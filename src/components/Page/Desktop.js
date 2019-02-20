@@ -22,7 +22,7 @@ const Page = ({ children, color, menu }) => {
         <div className={styles.HeaderLeft}>
           <a href="/">
             <img
-              alt="Ties.DB"
+              alt="OasisDDB"
               className={styles.HeaderLogo}
               src={color === COLOR.DARK ? require('./assets/logo_dark.svg') : require('./assets/logo.svg')}
             />
@@ -47,7 +47,7 @@ const Page = ({ children, color, menu }) => {
             Rent your drive
 
             <div className={styles.RentTooltip}>
-              Earn money with Ties.DB
+              Earn money with OasisDDB
             </div>
           </a>
         </div>

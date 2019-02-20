@@ -162,31 +162,31 @@ const initialState = {
       to: '2017-09-30',
     },
     {
-      description: 'Start of Ties.DB development.',
+      description: 'Start of OasisDDB development.',
       from: '2017-10-01',
       title: 'Q4 2017',
       to: '2017-12-31',
     },
     {
-      description: 'Development of Alpha Ties.DB.',
+      description: 'Development of Alpha OasisDDB.',
       from: '2018-01-01',
       title: 'Q1 2018',
       to: '2018-03-31',
     },
     {
-      description: 'Ties.DB Alpha launching and testing.',
+      description: 'OasisDDB Alpha launching and testing.',
       from: '2018-04-01',
       title: 'Q2 2018',
       to: '2018-06-30',
     },
     {
-      description: 'Ties.DB Beta testing.',
+      description: 'OasisDDB Beta testing.',
       from: '2018-07-01',
       title: 'Q3 2018',
       to: '2018-09-30',
     },
     {
-      description: 'Full decentralization launch. Ties.DB Beta launch. Ties.DB marketing campaign.',
+      description: 'Full decentralization launch. OasisDDB Beta launch. OasisDDB marketing campaign.',
       from: '2018-10-01',
       title: 'Q4 2018',
       to: '2018-12-31',
@@ -237,7 +237,7 @@ const initialState = {
   ],
   whyNeed: [
     {
-      description: 'Ties.DB servers are completely independent, scattered across the planet and accept payment in the crypto currency (TIE-token), which gives dapps-y very flexible options for working with the network Ties.DB.',
+      description: 'OasisDDB servers are completely independent, scattered across the planet and accept payment in the crypto currency (TIE-token), which gives dapps-y very flexible options for working with the network OasisDDB.',
       icon: require('../assets/why_need/daaps.svg'),
       link: {
         href: '/',
@@ -247,7 +247,7 @@ const initialState = {
       title: 'DAPPS',
     },
     {
-      description: 'We take from a concrete block system data encryption to generate keys in the signature and suggest that the creation of decentralized applications for This block, announcing that the data will be stored in Ties.DB.',
+      description: 'We take from a concrete block system data encryption to generate keys in the signature and suggest that the creation of decentralized applications for This block, announcing that the data will be stored in OasisDDB.',
       icon: require('../assets/why_need/blockchains.svg'),
       link: {
         href: '/',
@@ -257,7 +257,7 @@ const initialState = {
       title: 'BLOCKCHAINS',
     },
     {
-      description: 'Large projects can store Ties.DB file indexes, and in the future, store in Ties.DB and the files themselves. Any large project can make a fork of Ties.DB network to store data in a separate network.',
+      description: 'Large projects can store OasisDDB file indexes, and in the future, store in OasisDDB and the files themselves. Any large project can make a fork of OasisDDB network to store data in a separate network.',
       icon: require('../assets/why_need/international.svg'),
       link: {
         href: '/',

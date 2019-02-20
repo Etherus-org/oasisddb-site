@@ -12,7 +12,7 @@ const MainFeatures = ({ features }) => (
   <Block
     className={styles.Root}
     id="features"
-    title="Key features of&nbsp;Ties.DB"
+    title="Key features of&nbsp;OasisDDB"
   >
     <div className={styles.Features}>
       {features.map(({ description, icon, title }, index) => (
