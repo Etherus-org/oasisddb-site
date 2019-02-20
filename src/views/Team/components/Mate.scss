@@ -1,0 +1,47 @@
+.Root {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 80px;
+  }
+}
+
+.Description {
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+.Image {
+  max-width: 100%;
+}
+
+.Left {
+  background: #F1F1F1;
+  flex: 0 0 320px;
+}
+
+.Link {
+  background: #023654;
+  border-radius: 20px;
+  display: block;
+  height: 24px;
+  margin-left: 12px;
+  width: 24px;
+}
+
+.Name {
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.Position {
+  font-size: 20px;
+}
+
+.Right {
+  flex: 1 1 auto;
+  margin-left: 80px;
+}

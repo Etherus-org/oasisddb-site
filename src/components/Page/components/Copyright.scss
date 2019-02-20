@@ -1,0 +1,180 @@
+.Root {
+  padding: 24px;
+}
+
+.Company {
+  &Info {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 8px;
+
+    &Mobile {
+      display: none;
+    }
+  }
+}
+
+.Link {
+  color: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.Links {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.Logo {
+  height: 32px;
+}
+
+.Social {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+
+  &Link {
+    display: block;
+    height: 24px;
+    width: 24px;
+
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+
+    &Type {
+      &Facebook {
+        background-image: url('../assets/social/facebook.svg');
+
+        &:hover {
+          background-image: url('../assets/social/facebook_hover.svg');
+        }
+      }
+
+      &LinkedIn {
+        background-image: url('../assets/social/linkedin.svg');
+
+        &:hover {
+          background-image: url('../assets/social/linkedin_hover.svg');
+        }
+      }
+
+      &Twitter {
+        background-image: url('../assets/social/twitter.svg');
+
+        &:hover {
+          background-image: url('../assets/social/twitter_hover.svg');
+        }
+      }
+
+      &YouTube {
+        background-image: url('../assets/social/youtube.svg');
+
+        &:hover {
+          background-image: url('../assets/social/youtube_hover.svg');
+        }
+      }
+
+      &Reddit {
+        background-image: url('../assets/social/reddit.svg');
+
+        &:hover {
+          background-image: url('../assets/social/reddit_hover.svg');
+        }
+      }
+
+      &GitHub {
+        background-image: url('../assets/social/github.svg');
+
+        &:hover {
+          background-image: url('../assets/social/github_hover.svg');
+        }
+      }
+
+      &Bitcoin {
+        background-image: url('../assets/social/bitcoin.svg');
+
+        &:hover {
+          background-image: url('../assets/social/bitcoin_hover.svg');
+        }
+      }
+    }
+  }
+
+  &List {
+    display: flex;
+    margin-top: 16px;
+  }
+}
+
+.Wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 768px) {
+  .Root {
+    padding-top: 0;
+  }
+
+  .Company {
+    display: none;
+
+    &Info {
+      &Mobile {
+        display: block;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 16px;
+        opacity: .5;
+        text-align: center;
+      }
+    }
+  }
+
+  .Link {
+    font-size: 12px;
+    text-decoration: underline;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+
+  .Links {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 44px;
+  }
+
+  .Social {
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+
+    &Link {
+      background-size: contain;
+      height: 36px;
+      margin: 12px;
+      width: 36px;
+    }
+
+    &List {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .Wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,70 @@
+.Root {
+  background: #1C3B4F;
+  color: #FFFFFF;
+  padding: 80px 24px;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+}
+
+.Input {
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+  height: 46px;
+  padding: 0 16px;
+  width: 400px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.Submit {
+  background: #C92A3E;
+  border: 0;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  height: 48px;
+  margin-left: 24px;
+  width: 184px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: #E23147;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Form {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Input {
+    border: 0;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    height: 40px;
+    width: 100%;
+  }
+
+  .Submit {
+    font-size: 14px;
+    height: 40px;
+    margin: 12px 0 0;
+    text-transform: uppercase;
+  }
+}

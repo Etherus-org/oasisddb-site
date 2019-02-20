@@ -1,0 +1,49 @@
+.Root {
+  background-color: #2C3E4F;
+  color: #FFFFFF;
+}
+
+.Item {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  max-width: calc(100% / 7);
+
+  &Icon {
+    height: 64px;
+    width: 64px;
+  }
+
+  &Title {
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 52px;
+    text-align: center;
+  }
+}
+
+.List {
+  display: flex;
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Item {
+    flex: 0 0 100px;
+    margin: 16px 0;
+    max-width: 100%;
+
+    &Title {
+      font-size: 12px;
+      margin-top: 12px;
+    }
+  }
+
+  .List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+}

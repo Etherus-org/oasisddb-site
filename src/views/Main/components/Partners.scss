@@ -1,0 +1,41 @@
+.List {
+  display: grid;
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 40px auto 0px;
+}
+
+.Item {
+  align-items: center;
+  display: flex;
+
+  &:hover {
+    .ItemImage {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+
+  &Image {
+    filter: grayscale(100%);
+    opacity: .4;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Item {
+    max-width: 160px;
+
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  .List {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

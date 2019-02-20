@@ -1,0 +1,237 @@
+.Root {
+  display: flex;
+  height: 100%;
+
+  &Variant {
+    &Desktop {
+      .Item {
+        &Active {
+          box-shadow: inset 0px 4px 0 -1px #C92A3E;
+          cursor: pointer;
+
+          .ItemSubmenu {
+            display: flex;
+          }
+
+          .ItemTitle {
+            color: #FFFFFF;
+
+            &With {
+              &Caret {
+                &:after {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+
+        &Link {
+          color: rgba(255, 255, 255, .7);
+          font-size: 14px;
+        }
+
+        &Submenu {
+          display: none;
+          margin-top: 12px;
+          position: absolute;
+          top: 60px;
+        }
+
+        &Title {
+          color: rgba(255, 255, 255, .7);
+        }
+      }
+
+      &Dark {
+        .Item {
+          &Active {
+            .ItemTitle {
+              color: #1C3B4F;
+            }
+          }
+
+          &Link {
+            color: #1C3B4F;
+          }
+
+          &Title {
+            color: #1C3B4F;
+
+            &With {
+              &Caret {
+                &:after {
+                  background: url('../assets/arrow-dark.svg') no-repeat center center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &DesktopFooter {
+      .Item {
+        display: flex;
+        flex-direction: column;
+
+        &Link {
+          color: rgba(44, 62, 79, .5);
+          font-size: 12px;
+        }
+
+        &Submenu {
+          margin-top: 12px;
+        }
+
+        &Title {
+          color: #2C3E4F;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &Mobile {
+      flex-direction: column;
+
+      .Item {
+        flex-direction: column;
+        height: auto;
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+
+        &Active {
+          .Item {
+            &Submenu {
+              display: flex;
+            }
+          }
+        }
+
+        &Link {
+          align-items: center;
+          background: rgba(28, 59, 79, .5);
+          border-top: 1px solid rgba(255, 255, 255, .1);
+          display: flex;
+          color: #FFFFFF;
+          font-size: 20px;
+          font-weight: 500;
+          height: 44px;
+          justify-content: center;
+          opacity: 1;
+          width: 100%;
+
+          &:not(:first-child) {
+            margin: 0;
+          }
+        }
+
+        &Submenu {
+          display: none;
+          position: relative;
+          top: auto;
+          width: 100%;
+        }
+
+        &Title {
+          border-top: 1px solid rgba(255, 255, 255, .1);
+          color: #FFFFFF;
+          display: flex;
+          font-size: 20px;
+          font-weight: 600;
+          height: 44px;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+    }
+
+    &MobileFooter {
+      .Item {
+        &Link {
+          background: rgba(28, 59, 79, .16);
+          color: #1C3B4F;
+        }
+
+        &Title {
+          color: #1C3B4F;
+
+          &With {
+            &Caret {
+              &:after {
+                background: url('../assets/arrow-dark.svg') no-repeat center center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Item {
+  display: flex;
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:not(:first-child) {
+    margin-left: 52px;
+  }
+
+  &Link {
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  &Submenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Title {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 3px;
+      margin-left: 8px;
+      width: 8px;
+    }
+
+    &With {
+      &Caret {
+        &:after {
+          background: url('../assets/arrow.svg') no-repeat center center;
+        }
+      }
+
+      &Link {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

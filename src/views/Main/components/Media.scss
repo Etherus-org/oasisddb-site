@@ -1,0 +1,52 @@
+.Root {
+  background: #EAEEF2;
+}
+
+.Item {
+  &Date {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+
+  &Description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+
+  &Title {
+    color: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+}
+
+.Slider {
+  overflow: hidden;
+
+  :global .slick-dots {
+    display: flex !important;
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+
+    & > li {
+      flex: 1 1 auto;
+
+      &.slick-active {
+        & > button {
+          background: #C92A3E;
+        }
+      }
+
+      & > button {
+        background: #FFF;
+        border: 0;
+        color: transparent;
+        height: 3px;
+        width: 100%;
+      }
+    }
+  }
+}

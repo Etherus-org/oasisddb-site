@@ -1,0 +1,12 @@
+.Root {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .Root {
+    overflow: hidden;
+    width: 100%;
+  }
+}

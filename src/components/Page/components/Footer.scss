@@ -1,0 +1,28 @@
+.Root {
+  padding: 80px 24px;
+}
+
+.Menu {
+  width: 100%;
+}
+
+.Video {
+  background: #1C3B4F;
+  height: 120px;
+  width: 280px;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .Root {
+    padding: 52px 0;
+  }
+
+  .Right {
+    display: none;
+  }
+}
