@@ -29,7 +29,7 @@ const MainHeader = ({
         <div className={styles.Title}>
           Открой
           <br />
-          безграничные возмонжости
+          безграничные возможности
           <br />
           с OasisDDB
         </div>
