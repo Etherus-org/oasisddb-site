@@ -44,10 +44,10 @@ const Page = ({ children, color, menu }) => {
 
         <div className={styles.Rent}>
           <a className={styles.RentAction} href="/">
-            Rent your drive
+            Арендуй свой диск
 
             <div className={styles.RentTooltip}>
-              Earn money with OasisDDB
+              Зарабатывай с OasisDDB
             </div>
           </a>
         </div>
