@@ -9,7 +9,7 @@ import styles from './WhyUs.scss';
 const MainWhyUs = () => (
   <Block
     className={styles.Root}
-    title="Why us"
+    title="Почему мы"
   >
     <div className={styles.Wrapper}>
       <img

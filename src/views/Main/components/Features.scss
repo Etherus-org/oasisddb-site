@@ -13,6 +13,10 @@
   text-decoration: none;
   width: 184px;
 
+  &:nth-child(1) {
+    width: 280px;
+  }
+
   &:hover {
     background-color: #A8A8A8;
     color: #FFFFFF;
@@ -98,6 +102,10 @@
     font-weight: 600;
     text-transform: uppercase;
     width: 200px;
+
+    &:nth-child(1) {
+      width: 280px;
+    }
 
     &:not(:first-child) {
       margin: 12px 0 0;

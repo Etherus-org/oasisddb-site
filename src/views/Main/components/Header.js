@@ -27,31 +27,31 @@ const MainHeader = ({
 
       <div className={styles.Wrapper}>
         <div className={styles.Title}>
-          Discover
+          Открой
           <br />
-          boundless opportunities
+          безграничные возмонжости
           <br />
-          with OasisDDB
+          с OasisDDB
         </div>
 
         <div className={styles.Slogan}>
-          A&nbsp;public, distributed and&nbsp;decentralized&nbsp;database
+          Публичная, распределённая и&nbsp;децентрализованная&nbsp;база данных
           <br />
-          with one common thread: trust.
+          с одной общей чертой: доверие.
         </div>
 
         <form className={styles.Form}>
           <input
             className={styles.Input}
             name="email"
-            placeholder="Email address"
+            placeholder="Электронная почта"
           />
 
           <button
             className={styles.Button}
             type="submit"
           >
-            Get Early Access
+            Получить доступ
           </button>
         </form>
       </div>

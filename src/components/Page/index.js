@@ -14,31 +14,31 @@ const menu = [
   {
     id: 'about',
     items: [
-      { anchor: true, link: `${process.env.PUBLIC_URL}/#features`, title: 'Features' },
-      { anchor: true, link: `${process.env.PUBLIC_URL}/#roadmap`, title: 'Roadmap' },
-      { link: `${process.env.PUBLIC_URL}/team`, title: 'Team' },
+      { anchor: true, link: `${process.env.PUBLIC_URL}/#features`, title: 'Возможности' },
+      { anchor: true, link: `${process.env.PUBLIC_URL}/#roadmap`, title: 'Дорожная карта' },
+      { link: `${process.env.PUBLIC_URL}/team`, title: 'Команда' },
     ],
-    title: 'About',
+    title: 'О нас',
   },
   {
     id: 'news',
     items: [
-      { anchor: true, link: `${process.env.PUBLIC_URL}/#media`, title: 'Media' },
-      { external: true, link: 'https://blog.ties.network/', title: 'Blog' },
+      { anchor: true, link: `${process.env.PUBLIC_URL}/#media`, title: 'СМИ' },
+      { external: true, link: 'https://blog.ties.network/', title: 'Блог' },
     ],
-    title: 'News',
+    title: 'Новости',
   },
   {
     id: 'docs',
     items: [
-      { link: '/', title: 'White paper' },
-      { external: true, link: 'https://docs.google.com/document/d/1UwaaUgunnrFpL6jetA_DdNLQsbbqBx1HLcln07kLrUw', title: 'Yellow paper' },
-      { external: true, link: 'https://cdn.ties.network/short-guide-eng.pdf', title: 'Short Guide' },
+      { link: '/', title: 'Обзор технологии (White Paper)' },
+      { external: true, link: 'https://docs.google.com/document/d/1UwaaUgunnrFpL6jetA_DdNLQsbbqBx1HLcln07kLrUw', title: 'Техническое описание (Yellow Paper)' },
+      { external: true, link: 'https://cdn.ties.network/short-guide-eng.pdf', title: 'Руководство' },
     ],
-    title: 'Docs',
+    title: 'Документы',
   },
   { external: true, link: 'https://kb.ties.network/', title: 'FAQ' },
-  { link: '/', title: 'Contact' },
+  { link: '/', title: 'Контакты' },
 ];
 
 const Page = ({

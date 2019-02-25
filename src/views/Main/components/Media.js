@@ -32,7 +32,7 @@ const MainMedia = ({ news }) => (
   <Block
     className={styles.Root}
     id="media"
-    title="Media"
+    title="СМИ пишут о нас"
   >
     <Slider {...settings} className={styles.Slider}>
       {news.map(({ date, description, icon, link, title }, index) => (

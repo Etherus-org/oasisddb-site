@@ -10,7 +10,7 @@ import styles from './Partners.scss';
 const MainPartners = ({ partners }) => (
   <Block
     className={styles.Root}
-    title="Partners"
+    title="Партнеры"
   >
     <div className={styles.List}>
       {partners.map(({ link, src, title }, index) => (

@@ -30,7 +30,7 @@ const Page = ({ children, color, menu }) => {
 
 
           <div className={styles.HeaderRate}>
-            <strong>1 TIE</strong> = 0.671125$ (+12,24%)
+            <strong>1 ODDB</strong> = 0.25$
           </div>
         </div>
 

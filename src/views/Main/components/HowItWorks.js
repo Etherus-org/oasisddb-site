@@ -10,7 +10,7 @@ import styles from './HowItWorks.scss';
 const MainHowItWorks = ({ items }) => (
   <Block
     className={styles.Root}
-    title="How it works"
+    title="Как это работает"
   >
     <div className={styles.List}>
       {items.map(({ description, icon, title }, index) => (
@@ -35,7 +35,7 @@ const MainHowItWorks = ({ items }) => (
 
     <div className={styles.Actions}>
       <a className={styles.Action} href="/">
-        Short guide
+        Руководство
       </a>
     </div>
   </Block>

@@ -95,6 +95,11 @@
     height: 100px;
     width: 4px;
 
+    &:nth-child(2) {
+      flex: 0 0 196px;
+      height: 196px;
+    }
+
     &:nth-child(even) {
       .ItemContent {
         bottom: auto;

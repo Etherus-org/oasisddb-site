@@ -2,65 +2,65 @@ const initialState = {
   cases: [
     {
       icon: require('../assets/cases/data.svg'),
-      title: 'BIG DATA',
+      title: 'БОЛЬШИЕ ДАННЫЕ',
     },
     {
       icon: require('../assets/cases/knowledge.svg'),
-      title: 'KNOWLEDGE CASES',
+      title: 'БАЗЫ ЗНАНИЙ',
     },
     {
       icon: require('../assets/cases/social.svg'),
-      title: 'SOCIAL NETWORKS',
+      title: 'СОЦ. СЕТИ',
     },
     {
       icon: require('../assets/cases/docs.svg'),
-      title: 'OPEN DOCUMENTS REGISTRIES',
+      title: 'ОБОРОТ ДОКУМЕНТОВ',
     },
     {
       icon: require('../assets/cases/media.svg'),
-      title: 'MASS MEDIA',
+      title: 'СМИ',
     },
     {
       icon: require('../assets/cases/storage.svg'),
-      title: 'DATA STORAGE',
+      title: 'ХРАНИЛИЩЕ ДАННЫХ',
     },
     {
       icon: require('../assets/cases/sharing.svg'),
-      title: 'FILE SHARING',
+      title: 'ОБМЕН ФАЙЛАМИ',
     },
   ],
   features: [
     {
-      description: 'The absence of a single center control and failure, a completely self–organized network.',
+      description: 'Отсутствие единого центра управления и отказа, полностью самоорганизованная сеть.',
       icon: require('../assets/features/decentralization.svg'),
-      title: 'DECENTRALIZATION',
+      title: 'ДЕЦЕНТРАЛИЗОВАННАЯ',
     },
     {
-      description: 'Parallel operation of many servers ensures high speed of processing requests.',
+      description: 'Параллельная работа многих серверов обеспечивает высокую скорость обработки запросов.',
       icon: require('../assets/features/search.svg'),
-      title: 'ADVANCED SEARCH',
+      title: 'РАСШИРЕННЫЙ ПОИСК',
     },
     {
-      description: 'Ability to edit and delete previously posted data for their owner.',
+      description: 'Возможность редактировать и удалять ранее размещенные данные для своего владельца.',
       icon: require('../assets/features/modifable.svg'),
-      title: 'MODIFIABLE',
+      title: 'МОДИФИЦИРУЕМАЯ',
     },
   ],
   howItWorks: [
     {
       description: 'Все предоставляемые серверы объеденены в одну систему.',
       icon: require('../assets/how_it_works/network.svg'),
-      title: 'NETWORK ARRANGEMENT',
+      title: 'РАСПРЕДЕЛЕНИЕ СЕТИ',
     },
     {
       description: 'Кто угодно может разместить контент. Он распределяется по разным серверам.',
       icon: require('../assets/how_it_works/upload.svg'),
-      title: 'UPLOAD',
+      title: 'ЗАГРУЗКА',
     },
     {
       description: 'Кто угодно может запросить контент и он соберется в единое целое.',
       icon: require('../assets/how_it_works/download.svg'),
-      title: 'SEARCH AND DOWNLOAD',
+      title: 'ПОИСК И СКАЧИВАНИЕ',
     },
   ],
   media: [
@@ -150,49 +150,49 @@ const initialState = {
   ],
   roadmap: [
     {
-      description: 'API prototyping. White paper published.',
+      description: 'Прототипирование API. Публикация Обзора технологии (White Paper)',
       from: '2017-01-01',
       title: 'Q1 2017',
       to: '2017-03-31',
     },
     {
-      description: 'Pre Token generation event marketing campaign. Yellow paper published. Prototype launch and testing. TGE announced.',
+      description: 'Маркетинговая компания предварительной продажи токена. Публикация Технического описания (Yellow Paper). Запуск прототипа и тестирование. TGE анонс.',
       from: '2017-07-01',
       title: 'Q3 2017',
       to: '2017-09-30',
     },
     {
-      description: 'Start of OasisDDB development.',
+      description: 'Начало разработки OasisDDB.',
       from: '2017-10-01',
       title: 'Q4 2017',
       to: '2017-12-31',
     },
     {
-      description: 'Development of Alpha OasisDDB.',
+      description: 'Разработка альфа-версии OasisDDB.',
       from: '2018-01-01',
       title: 'Q1 2018',
       to: '2018-03-31',
     },
     {
-      description: 'OasisDDB Alpha launching and testing.',
+      description: 'Запуск и тестирование альфа-версии OasisDDB.',
       from: '2018-04-01',
       title: 'Q2 2018',
       to: '2018-06-30',
     },
     {
-      description: 'OasisDDB Beta testing.',
+      description: 'Тестирование бета-версии OasisDDB.',
       from: '2018-07-01',
       title: 'Q3 2018',
       to: '2018-09-30',
     },
     {
-      description: 'Full decentralization launch. OasisDDB Beta launch. OasisDDB marketing campaign.',
+      description: 'Запуск полной децентрализации и бета-версии OasisDDB. Маректинговая компания.',
       from: '2018-10-01',
       title: 'Q4 2018',
       to: '2018-12-31',
     },
     {
-      description: 'Integration with other blockchains started.',
+      description: 'Интеграция с другими блокчейнами.',
       from: '2019-01-01',
       title: 'Q1 2019',
       to: '2019-03-31',
@@ -237,34 +237,34 @@ const initialState = {
   ],
   whyNeed: [
     {
-      description: 'OasisDDB servers are completely independent, scattered across the planet and accept payment in the crypto currency (TIE-token), which gives dapps-y very flexible options for working with the network OasisDDB.',
+      description: 'Серверы OasisDDB полностью независимы, расположены по всей планете и принимают платежи в криптовалюте (ODDB-токен), что дает dapps-y очень гибкие возможности для работы с сетью OasisDDB.',
       icon: require('../assets/why_need/daaps.svg'),
       link: {
         href: '/',
-        title: 'BE 100% DECENTRALIZED',
+        title: 'СТАТЬ ДЕЦЕНТРАЛИЗОВАННЫМ',
       },
-      preface: 'Centralized storage solutions are vulnerable. Decentralized solutions used Today, they do not allow a quick search and modification of data.',
+      preface: 'Решения для централизованного хранения уязвимы. Используемые сегодня децентрализованные решения не позволяют осуществлять быстрый поиск и изменение данных.',
       title: 'DAPPS',
     },
     {
-      description: 'We take from a concrete block system data encryption to generate keys in the signature and suggest that the creation of decentralized applications for This block, announcing that the data will be stored in OasisDDB.',
+      description: 'Мы берем из конкретного блока системы шифрования данных для генерации ключей в подписи и предлагаем создать децентрализованные приложения для этого блока, объявив, что данные будут храниться в OasisDDB.',
       icon: require('../assets/why_need/blockchains.svg'),
       link: {
         href: '/',
-        title: 'BE 100% COMPETITIVE',
+        title: 'СТАТЬ КОНКУРЕНТНЫМ',
       },
-      preface: 'Today there is no effective storage solution data that entails the difficulty of attracting and hold dApps.',
-      title: 'BLOCKCHAINS',
+      preface: 'На сегодняшний день не существует эффективного решения для хранения данных, которое влечет за собой сложность привлечения и хранения dApps.',
+      title: 'БЛОКЧЕЙН',
     },
     {
-      description: 'Large projects can store OasisDDB file indexes, and in the future, store in OasisDDB and the files themselves. Any large project can make a fork of OasisDDB network to store data in a separate network.',
+      description: 'Большие проекты могут хранить файловые индексы OasisDDB, а в будущем хранить в OasisDDB и сами файлы. Любой крупный проект может сделать форк сети OasisDDB для хранения данных в отдельной сети.',
       icon: require('../assets/why_need/international.svg'),
       link: {
         href: '/',
-        title: 'BE 100% BOUNDLESS',
+        title: 'СТАТЬ БЕЗГРАНИЧНЫМ',
       },
-      preface: 'It is difficult to build self-service today cross-border infrastructure.',
-      title: 'INTERNATIONAL PROJECTS',
+      preface: 'Сегодня сложно построить самообслуживание трансграничной инфраструктуры.',
+      title: 'МЕЖДУНАРОДНЫЕ ПРОЕКТЫ',
     },
   ],
 }

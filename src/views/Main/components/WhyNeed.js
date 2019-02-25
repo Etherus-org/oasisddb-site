@@ -10,7 +10,7 @@ import styles from './WhyNeed.scss';
 const MainWhyNeed = ({ items }) => (
   <Block
     className={styles.Root}
-    title="Why you really need OasisDDB"
+    title="Почему Вам действительно нужна OasisDDB"
   >
     <div className={styles.List}>
       {items.map(({ description, icon, link, preface, title }, index) => (

@@ -10,7 +10,7 @@ import styles from './Cases.scss';
 const MainCases = ({ cases }) => (
   <Block
     className={styles.Root}
-    title="Application cases"
+    title="Сферы применения"
   >
     <div className={styles.List}>
       {cases.map(({ icon, title }, index) => (

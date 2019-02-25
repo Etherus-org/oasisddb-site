@@ -21,12 +21,12 @@ const PageCopyright = ({ social }) => (
         </a>
 
         <div className={styles.CompanyInfo}>
-          OasisDDB. Limited liability company. KvK-nummer: 69555176
+          ООО "OasisDDB"
         </div>
       </div>
 
       <div className={styles.Social}>
-        Got questions? Ask&nbsp;us&nbsp;on&nbsp;our&nbsp;channel
+        Остались вопросы? Спросите&nbsp;нас&nbsp;в&nbsp;наших&nbsp;каналах
 
         <div className={styles.SocialList}>
           {social.map(({ icon, id, link, title }, index) => {
@@ -49,18 +49,16 @@ const PageCopyright = ({ social }) => (
 
       <div className={styles.Links}>
         <a className={styles.Link} href="/">
-          Private policy
+          Политика конфиденциальности
         </a>
 
         <a className={styles.Link} href="/">
-          Terms and conditions
+          Условия и положения
         </a>
       </div>
 
       <div className={styles.CompanyInfoMobile}>
-        OasisDDB. Limited liability company.
-        <br />
-        KvK-nummer: 69555176
+        ООО "OasisDDB"
       </div>
     </div>
   </Block>

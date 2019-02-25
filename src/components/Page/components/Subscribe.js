@@ -8,17 +8,17 @@ import styles from './Subscribe.scss';
 const PageSubscribe = ({ partners }) => (
   <Block
     className={styles.Root}
-    title="Keep in touch with the latest news"
+    title="Будьте в курсе последних новостей"
   >
     <form className={styles.Form}>
       <input
         className={styles.Input}
         name="email"
-        placeholder="Email address"
+        placeholder="Электронная почта"
       />
 
       <button className={styles.Submit} type="submit">
-        Subscribe
+        Подписаться
       </button>
     </form>
   </Block>

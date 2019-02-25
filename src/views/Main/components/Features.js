@@ -12,7 +12,7 @@ const MainFeatures = ({ features }) => (
   <Block
     className={styles.Root}
     id="features"
-    title="Key features of&nbsp;OasisDDB"
+    title="Ключевые особенности OasisDDB"
   >
     <div className={styles.Features}>
       {features.map(({ description, icon, title }, index) => (
@@ -38,21 +38,21 @@ const MainFeatures = ({ features }) => (
 
     <div className={styles.More}>
       <a className={styles.MoreLink} href="/">
-        See all features
+        Посмотреть весь список
       </a>
     </div>
 
     <div className={styles.Actions}>
       <a className={styles.Action} href="/">
-        Yellow paper
+        Техническая документация
       </a>
 
       <a className={classNames(styles.Action, styles.ActionRed)} href="/">
-        Short guide
+        Руководство
       </a>
 
       <a className={styles.Action} href="/">
-        White paper
+        Описание проекта
       </a>
     </div>
   </Block>

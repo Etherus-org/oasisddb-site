@@ -13,7 +13,7 @@ const MainRoadmap = ({ points }) => (
   <Block
     className={styles.Root}
     id="roadmap"
-    title="Roadmap"
+    title="Дорожная Карта"
   >
     <div className={styles.List}>
       {points.map(({ description, from, title, to }, index) => {

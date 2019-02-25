@@ -21,7 +21,7 @@ const PageFooter = ({ env: { isMobile }, menu }) => (
       </div>
 
       <div className={styles.Right}>
-        Watch the Video
+        Посмотреть видео
 
         <div className={styles.Video} />
       </div>
