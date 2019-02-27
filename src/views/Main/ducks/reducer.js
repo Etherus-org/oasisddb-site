@@ -1,90 +1,27 @@
 const initialState = {
   cases: [
-    {
-      icon: require('../assets/cases/data.svg'),
-      title: 'БОЛЬШИЕ ДАННЫЕ',
-    },
-    {
-      icon: require('../assets/cases/knowledge.svg'),
-      title: 'БАЗЫ ЗНАНИЙ',
-    },
-    {
-      icon: require('../assets/cases/social.svg'),
-      title: 'СОЦ. СЕТИ',
-    },
-    {
-      icon: require('../assets/cases/docs.svg'),
-      title: 'ОБОРОТ ДОКУМЕНТОВ',
-    },
-    {
-      icon: require('../assets/cases/media.svg'),
-      title: 'СМИ',
-    },
-    {
-      icon: require('../assets/cases/storage.svg'),
-      title: 'ХРАНИЛИЩЕ ДАННЫХ',
-    },
-    {
-      icon: require('../assets/cases/sharing.svg'),
-      title: 'ОБМЕН ФАЙЛАМИ',
-    },
+    { id: 'big_data', icon: require('../assets/cases/data.svg') },
+    { id: 'knowledge', icon: require('../assets/cases/knowledge.svg') },
+    { id: 'networks', icon: require('../assets/cases/social.svg') },
+    { id: 'documents', icon: require('../assets/cases/docs.svg') },
+    { id: 'media', icon: require('../assets/cases/media.svg') },
+    { id: 'storage', icon: require('../assets/cases/storage.svg') },
+    { id: 'sharing', icon: require('../assets/cases/sharing.svg') },
   ],
   features: [
-    {
-      description: 'Отсутствие единого центра управления и отказа, полностью самоорганизованная сеть.',
-      icon: require('../assets/features/decentralization.svg'),
-      title: 'ДЕЦЕНТРАЛИЗОВАННАЯ',
-    },
-    {
-      description: 'Параллельная работа многих серверов обеспечивает высокую скорость обработки запросов.',
-      icon: require('../assets/features/search.svg'),
-      title: 'РАСШИРЕННЫЙ ПОИСК',
-    },
-    {
-      description: 'Возможность редактировать и удалять ранее размещенные данные для своего владельца.',
-      icon: require('../assets/features/modifable.svg'),
-      title: 'МОДИФИЦИРУЕМАЯ',
-    },
+    { id: 'decentralization', icon: require('../assets/features/decentralization.svg') },
+    { id: 'advanced_search', icon: require('../assets/features/search.svg') },
+    { id: 'modifiable', icon: require('../assets/features/modifable.svg') },
   ],
   howItWorks: [
-    {
-      description: 'Все предоставляемые серверы объеденены в одну систему.',
-      icon: require('../assets/how_it_works/network.svg'),
-      title: 'РАСПРЕДЕЛЕНИЕ СЕТИ',
-    },
-    {
-      description: 'Кто угодно может разместить контент. Он распределяется по разным серверам.',
-      icon: require('../assets/how_it_works/upload.svg'),
-      title: 'ЗАГРУЗКА',
-    },
-    {
-      description: 'Кто угодно может запросить контент и он соберется в единое целое.',
-      icon: require('../assets/how_it_works/download.svg'),
-      title: 'ПОИСК И СКАЧИВАНИЕ',
-    },
+    { id: 'network', icon: require('../assets/how_it_works/network.svg'), title: 'РАСПРЕДЕЛЕНИЕ СЕТИ' },
+    { id: 'upload', icon: require('../assets/how_it_works/upload.svg') },
+    { id: 'download', icon: require('../assets/how_it_works/download.svg') },
   ],
   media: [
-    {
-      date: '01.09.2017',
-      description: 'As a business tool, Ties.Network enables members to securely connect and transact with top-rated industry professionals. Users collaborate on projects, receive counsel from industry experts and instantly strike deals via smart contracts.',
-      icon: '',
-      link: 'https://cointelegraph.com/news/tiesnetwork-promises-the-enhanced-linkedin-of-crypto-community',
-      title: 'Ties.Network Promises the Enhanced LinkedIn of Crypto- Community',
-    },
-    {
-      date: '25.08.2017',
-      description: 'We need confirmed experts in crypto-investment. People who’ve already made a number of correct investment decisions and can help others do the same.',
-      icon: '',
-      link: 'https://themerkle.com/ties-network-announces-token-generation-event-tge/',
-      title: 'Ties.Network Announces Token Generation Event (TGE)',
-    },
-    {
-      date: '08.09.2017',
-      description: 'We need confirmed experts in crypto-investment. People who’ve already made a number of correct investment decisions and can help others do the same. ',
-      icon: '',
-      link: 'http://www.coinfox.info/news/7587-how-do-you-know-who-to-trust-in-the-world-of-icos-and-cryptocurrencies-ties-network-offers-one-possible-solution',
-      title: 'How do you know who to trust in the world of ICOs and cryptocurrencies - Ties.Network offers one possible solution ',
-    },
+    { id: '0', icon: '', link: 'https://cointelegraph.com/news/tiesnetwork-promises-the-enhanced-linkedin-of-crypto-community' },
+    { id: '1', icon: '', link: 'https://themerkle.com/ties-network-announces-token-generation-event-tge/' },
+    { id: '2', icon: '', link: 'http://www.coinfox.info/news/7587-how-do-you-know-who-to-trust-in-the-world-of-icos-and-cryptocurrencies-ties-network-offers-one-possible-solution' },
   ],
   partners: [
     {
@@ -149,54 +86,14 @@ const initialState = {
     },
   ],
   roadmap: [
-    {
-      description: 'Прототипирование API. Публикация Обзора технологии (White Paper)',
-      from: '2017-01-01',
-      title: 'Q1 2017',
-      to: '2017-03-31',
-    },
-    {
-      description: 'Маркетинговая компания предварительной продажи токена. Публикация Технического описания (Yellow Paper). Запуск прототипа и тестирование. TGE анонс.',
-      from: '2017-07-01',
-      title: 'Q3 2017',
-      to: '2017-09-30',
-    },
-    {
-      description: 'Начало разработки OasisDDB.',
-      from: '2017-10-01',
-      title: 'Q4 2017',
-      to: '2017-12-31',
-    },
-    {
-      description: 'Разработка альфа-версии OasisDDB.',
-      from: '2018-01-01',
-      title: 'Q1 2018',
-      to: '2018-03-31',
-    },
-    {
-      description: 'Запуск и тестирование альфа-версии OasisDDB.',
-      from: '2018-04-01',
-      title: 'Q2 2018',
-      to: '2018-06-30',
-    },
-    {
-      description: 'Тестирование бета-версии OasisDDB.',
-      from: '2018-07-01',
-      title: 'Q3 2018',
-      to: '2018-09-30',
-    },
-    {
-      description: 'Запуск полной децентрализации и бета-версии OasisDDB. Маректинговая компания.',
-      from: '2018-10-01',
-      title: 'Q4 2018',
-      to: '2018-12-31',
-    },
-    {
-      description: 'Интеграция с другими блокчейнами.',
-      from: '2019-01-01',
-      title: 'Q1 2019',
-      to: '2019-03-31',
-    },
+    { id: '2017_q1', from: '2017-01-01', to: '2017-03-31' },
+    { id: '2017_q3', from: '2017-07-01', to: '2017-09-30' },
+    { id: '2017_q4', from: '2017-10-01', to: '2017-12-31' },
+    { id: '2018_q1', from: '2018-01-01', to: '2018-03-31' },
+    { id: '2018_q2', from: '2018-04-01', to: '2018-06-30' },
+    { id: '2018_q3', from: '2018-07-01', to: '2018-09-30' },
+    { id: '2018_q4', from: '2018-10-01', to: '2018-12-31' },
+    { id: '2019_q1', from: '2019-01-01', to: '2019-03-31' },
   ],
   social: [
     {
@@ -237,34 +134,19 @@ const initialState = {
   ],
   whyNeed: [
     {
-      description: 'Серверы OasisDDB полностью независимы, расположены по всей планете и принимают платежи в криптовалюте (ODDB-токен), что дает dapps-y очень гибкие возможности для работы с сетью OasisDDB.',
+      id: 'dapps',
       icon: require('../assets/why_need/daaps.svg'),
-      link: {
-        href: '/',
-        title: 'СТАТЬ ДЕЦЕНТРАЛИЗОВАННЫМ',
-      },
-      preface: 'Решения для централизованного хранения уязвимы. Используемые сегодня децентрализованные решения не позволяют осуществлять быстрый поиск и изменение данных.',
-      title: 'DAPPS',
+      href: '/',
     },
     {
-      description: 'Мы берем из конкретного блока системы шифрования данных для генерации ключей в подписи и предлагаем создать децентрализованные приложения для этого блока, объявив, что данные будут храниться в OasisDDB.',
+      id: 'blockchain',
       icon: require('../assets/why_need/blockchains.svg'),
-      link: {
-        href: '/',
-        title: 'СТАТЬ КОНКУРЕНТНЫМ',
-      },
-      preface: 'На сегодняшний день не существует эффективного решения для хранения данных, которое влечет за собой сложность привлечения и хранения dApps.',
-      title: 'БЛОКЧЕЙН',
+      href: '/',
     },
     {
-      description: 'Большие проекты могут хранить файловые индексы OasisDDB, а в будущем хранить в OasisDDB и сами файлы. Любой крупный проект может сделать форк сети OasisDDB для хранения данных в отдельной сети.',
+      id: 'international',
       icon: require('../assets/why_need/international.svg'),
-      link: {
-        href: '/',
-        title: 'СТАТЬ БЕЗГРАНИЧНЫМ',
-      },
-      preface: 'Сегодня сложно построить самообслуживание трансграничной инфраструктуры.',
-      title: 'МЕЖДУНАРОДНЫЕ ПРОЕКТЫ',
+      href: '/',
     },
   ],
 }

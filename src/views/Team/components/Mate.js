@@ -1,11 +1,13 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import styles from './Mate.scss';
 
 const TeamMate = ({
+  id,
   description,
   image,
-  linkedin,
+  link,
   name,
   position,
 }) => (
@@ -20,21 +22,30 @@ const TeamMate = ({
 
     <div className={styles.Right}>
       <div className={styles.Name}>
-        {name}
+        <FormattedMessage
+          id={`team.${id}.name`}
+          defaultMessage="Name"
+        />
 
         <a
           className={styles.Link}
-          href={linkedin}
+          href={link}
           target="_blank"
         />
       </div>
 
       <div className={styles.Position}>
-        {position}
+        <FormattedMessage
+          id={`team.${id}.position`}
+          defaultMessage="Position"
+        />
       </div>
 
       <div className={styles.Description}>
-        {description}
+        <FormattedMessage
+          id={`team.${id}.description`}
+          defaultMessage="Description"
+        />
       </div>
     </div>
   </div>

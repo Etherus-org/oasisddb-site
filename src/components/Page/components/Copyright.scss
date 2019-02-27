@@ -42,6 +42,10 @@
   font-size: 14px;
   text-align: center;
 
+  & > span {
+    white-space: pre-wrap;
+  }
+
   &Link {
     display: block;
     height: 24px;

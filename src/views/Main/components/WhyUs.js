@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 /** Components **/
 import Block from 'components/Block';
@@ -7,30 +7,49 @@ import Block from 'components/Block';
 import styles from './WhyUs.scss';
 
 const MainWhyUs = () => (
-  <Block
-    className={styles.Root}
-    title="Почему мы"
+  <FormattedMessage
+    id="why_us.title"
+    defaultMessage="Why us"
   >
-    <div className={styles.Wrapper}>
-      <img
-        alt="Why us"
-        className={styles.ImageDesktop}
-        src={require('../assets/why_us/table.svg')}
-      />
+    {(title) => (
+      <Block
+        className={styles.Root}
+        title={title}
+      >
+        <div className={styles.Wrapper}>
+          <FormattedMessage id="why_us.table">
+            {(src) => (
+              <img
+                alt={title}
+                className={styles.ImageDesktop}
+                src={src}
+              />
+            )}
+          </FormattedMessage>
 
-      <img
-        alt="Why us"
-        className={styles.ImageMobile}
-        src={require('../assets/why_us/table_mob_head.svg')}
-      />
+          <FormattedMessage id="why_us.mob_head">
+            {(src) => (
+              <img
+                alt={title}
+                className={styles.ImageMobile}
+                src={src}
+              />
+            )}
+          </FormattedMessage>
 
-      <img
-        alt="Why us"
-        className={styles.ImageMobile}
-        src={require('../assets/why_us/table_mob_body.svg')}
-      />
-    </div>
-  </Block>
+          <FormattedMessage id="why_us.mob_body">
+            {(src) => (
+              <img
+                alt={title}
+                className={styles.ImageMobile}
+                src={src}
+              />
+            )}
+          </FormattedMessage>
+        </div>
+      </Block>
+    )}
+  </FormattedMessage>
 )
 
 export default MainWhyUs;

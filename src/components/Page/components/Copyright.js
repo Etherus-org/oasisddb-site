@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { get } from 'lodash';
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 
 /** Components **/
@@ -21,12 +22,18 @@ const PageCopyright = ({ social }) => (
         </a>
 
         <div className={styles.CompanyInfo}>
-          ООО "OasisDDB"
+          <FormattedMessage
+            id="copyright.title"
+            defaultMessage="Ties.BV. Limited liability company."
+          />
         </div>
       </div>
 
       <div className={styles.Social}>
-        Остались вопросы? Спросите&nbsp;нас&nbsp;в&nbsp;наших&nbsp;каналах
+        <FormattedMessage
+          id="copyright.questions"
+          defaultMessage="Got questions? Ask us on our channel"
+        />
 
         <div className={styles.SocialList}>
           {social.map(({ icon, id, link, title }, index) => {
@@ -49,16 +56,25 @@ const PageCopyright = ({ social }) => (
 
       <div className={styles.Links}>
         <a className={styles.Link} href="/">
-          Политика конфиденциальности
+          <FormattedMessage
+            id="copyright.policy"
+            defaultMessage="Private policy"
+          />
         </a>
 
         <a className={styles.Link} href="/">
-          Условия и положения
+          <FormattedMessage
+            id="copyright.terms"
+            defaultMessage="Terms and conditions"
+          />
         </a>
       </div>
 
       <div className={styles.CompanyInfoMobile}>
-        ООО "OasisDDB"
+        <FormattedMessage
+          id="copyright.title"
+          defaultMessage="Ties.BV. Limited liability company."
+        />
       </div>
     </div>
   </Block>

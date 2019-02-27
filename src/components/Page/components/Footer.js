@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 
 /** Components **/
@@ -21,7 +22,10 @@ const PageFooter = ({ env: { isMobile }, menu }) => (
       </div>
 
       <div className={styles.Right}>
-        Посмотреть видео
+        <FormattedMessage
+          id="footer.video"
+          defaultMessage="Watch the Video"
+        />
 
         <div className={styles.Video} />
       </div>

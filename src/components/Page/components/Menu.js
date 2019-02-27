@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React, { createElement } from 'react';
+import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 import { compose, withStateHandlers } from 'recompose';
 
@@ -37,7 +38,7 @@ const PageMenu = ({
 
   return (
     <div className={className}>
-      {menu.map(({ anchor, external, id, items, link, title }, index) => {
+      {menu.map(({ anchor, external, id, items, link }, index) => {
         const className = classNames(styles.Item, {
           [styles.ItemActive]: currentId === id || variant === VARIANT.DESKTOP_FOOTER,
         });
@@ -53,24 +54,38 @@ const PageMenu = ({
             key={index}
             onClick={() => items && handleItemClick(id)}
           >
-            {createElement(link ? anchor || external ? 'a' : Link : 'div', {
-              children: title,
-              className: titleClassName,
-              href: link,
-              to: link,
-            })}
+            <FormattedMessage
+              id={`menu.${id}`}
+              defaultMessage="Link"
+            >
+              {(title) => (
+                createElement(link ? anchor || external ? 'a' : Link : 'div', {
+                  children: title,
+                  className: titleClassName,
+                  href: link,
+                  to: link,
+                })
+              )}
+            </FormattedMessage>
 
             {items && (
               <div className={styles.ItemSubmenu}>
-                {items.map(({ anchor, external, link, title }, index) =>
-                  createElement(anchor || external ? 'a' : Link, {
-                    children: title,
-                    className: styles.ItemLink,
-                    key: index,
-                    href: link,
-                    to: link,
-                  })
-                )}
+                {items.map(({ id, anchor, external, link }, index) => (
+                  <FormattedMessage
+                    id={`menu.${id}`}
+                    defaultMessage="Link"
+                  >
+                    {(title) => (
+                      createElement(anchor || external ? 'a' : Link, {
+                        children: title,
+                        className: styles.ItemLink,
+                        key: index,
+                        href: link,
+                        to: link,
+                      })
+                    )}
+                  </FormattedMessage>
+                ))}
               </div>
             )}
           </div>

@@ -1,5 +1,6 @@
 import { get } from 'lodash';
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import Slider from 'react-slick';
 import { connect } from 'react-redux';
 
@@ -29,29 +30,45 @@ const settings = {
 };
 
 const MainMedia = ({ news }) => (
-  <Block
-    className={styles.Root}
-    id="media"
-    title="СМИ пишут о нас"
+  <FormattedMessage
+    id="media.title"
+    defaultMessage="Media"
   >
-    <Slider {...settings} className={styles.Slider}>
-      {news.map(({ date, description, icon, link, title }, index) => (
-        <div className={styles.Item} key={index}>
-          <a className={styles.ItemTitle} href={link}>
-            {title}
-          </a>
+    {(title) => (
+      <Block
+        className={styles.Root}
+        id="media"
+        title={title}
+      >
+        <Slider {...settings} className={styles.Slider}>
+          {news.map(({ id, icon, link }, index) => (
+            <div className={styles.Item} key={index}>
+              <a className={styles.ItemTitle} href={link}>
+                <FormattedMessage
+                  id={`media.${id}.title`}
+                  defaultMessage="Title"
+                />
+              </a>
 
-          <div className={styles.ItemDescription}>
-            {description}
-          </div>
+              <div className={styles.ItemDescription}>
+                <FormattedMessage
+                  id={`media.${id}.description`}
+                  defaultMessage="Description"
+                />
+              </div>
 
-          <div className={styles.ItemDate}>
-            {date}
-          </div>
-        </div>
-      ))}
-    </Slider>
-  </Block>
+              <div className={styles.ItemDate}>
+                <FormattedMessage
+                  id={`media.${id}.date`}
+                  defaultMessage="Date"
+                />
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </Block>
+    )}
+  </FormattedMessage>
 )
 
 const mapStateToProps = ({ views }) => ({

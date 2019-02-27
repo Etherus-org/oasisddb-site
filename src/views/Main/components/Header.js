@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 /** Components **/
 import Block from 'components/Block';
@@ -27,31 +28,41 @@ const MainHeader = ({
 
       <div className={styles.Wrapper}>
         <div className={styles.Title}>
-          Открой
-          <br />
-          безграничные возможности
-          <br />
-          с OasisDDB
+          <FormattedMessage
+            id="header.title"
+            defaultMessage="Discover\nboundless opportunities\nwith Ties.DB"
+          />
         </div>
 
         <div className={styles.Slogan}>
-          Публичная, распределённая и&nbsp;децентрализованная&nbsp;база данных
-          <br />
-          с одной общей чертой: доверие.
+          <FormattedMessage
+            id="header.slogan"
+            defaultMessage="A public, distributed and decentralized database\nwith one common thread: trust."
+          />
         </div>
 
         <form className={styles.Form}>
-          <input
-            className={styles.Input}
-            name="email"
-            placeholder="Электронная почта"
-          />
+          <FormattedMessage
+            id="subscribe.email"
+            defaultMessage="Email address"
+          >
+            {(placeholder) => (
+              <input
+                className={styles.Input}
+                name="email"
+                placeholder={placeholder}
+              />
+            )}
+          </FormattedMessage>
 
           <button
             className={styles.Button}
             type="submit"
           >
-            Получить доступ
+            <FormattedMessage
+              id="subscribe.access"
+              defaultMessage="Get Early Access"
+            />
           </button>
         </form>
       </div>

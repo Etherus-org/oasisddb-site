@@ -56,8 +56,24 @@
   }
 }
 
+.Language {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0 0;
+
+  &Item {
+    opacity: .6;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+}
+
 .Rent {
-  margin-left: 36px;
+  margin: 28px 0 0 36px;
 
   &Action {
     align-items: center;
@@ -71,6 +87,7 @@
     position: relative;
     text-decoration: none;
     width: 180px;
+    z-index: 2;
 
     &:hover {
       background: #5E8896; 

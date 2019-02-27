@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 /** Components **/
 import Copyright from './components/Copyright';
@@ -44,12 +45,36 @@ const Page = ({ children, color, menu }) => {
 
         <div className={styles.Rent}>
           <a className={styles.RentAction} href="/">
-            Арендуй свой диск
+            <FormattedMessage
+              id="common.rent"
+              defaultMessage="Rent your drive"
+            />
 
             <div className={styles.RentTooltip}>
-              Зарабатывай с OasisDDB
+              <FormattedMessage
+                id="common.rent.tooltip"
+                defaultMessage="Earn money with OasisDDB"
+              />
             </div>
           </a>
+
+          <div className={styles.Language}>
+            <div className={styles.LanguageItem}>
+              RU
+            </div>
+
+            <div className={styles.LanguageItem}>
+              EN
+            </div>
+
+            <div className={styles.LanguageItem}>
+              ES
+            </div>
+
+            <div className={styles.LanguageItem}>
+              CN
+            </div>
+          </div>
         </div>
       </div>
 

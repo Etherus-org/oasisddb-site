@@ -1,5 +1,6 @@
 import { get } from 'lodash';
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 
 /** Components **/
@@ -15,13 +16,27 @@ const Team = ({ team }) => (
     className={styles.Root}
     color={COLOR.DARK}
   >
-    <Block title="Our Team">
-      {team.map((mate, index) => <Mate {...mate} key={index} />)}
-    </Block>
+    <FormattedMessage
+      id="team.title"
+      defaultMessage="Our Team"
+    >
+      {(title) => (
+        <Block title={title}>
+          {team.map((mate, index) => <Mate {...mate} key={index} />)}
+        </Block>
+      )}
+    </FormattedMessage>
 
-    <Block title="Advisors">
-      <div>123</div>
-    </Block>
+    <FormattedMessage
+      id="advisors.title"
+      defaultMessage="Advisors"
+    >
+      {(title) => (
+        <Block title={title}>
+          <div>123</div>
+        </Block>
+      )}
+    </FormattedMessage>
   </Page>
 )
 

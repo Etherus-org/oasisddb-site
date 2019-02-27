@@ -1,5 +1,6 @@
 import { get } from 'lodash';
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 
 /** Components **/
@@ -8,26 +9,36 @@ import Block from 'components/Block';
 import styles from './Cases.scss';
 
 const MainCases = ({ cases }) => (
-  <Block
-    className={styles.Root}
-    title="Сферы применения"
+  <FormattedMessage
+    id="cases.title"
+    defaultMessage="Application cases"
   >
-    <div className={styles.List}>
-      {cases.map(({ icon, title }, index) => (
-        <div className={styles.Item} key={index}>
-          <img
-            alt={title}
-            className={styles.ItemIcon}
-            src={icon}
-          />
+    {(title) => (
+      <Block
+        className={styles.Root}
+        title={title}
+      >
+        <div className={styles.List}>
+          {cases.map(({ id, icon }, index) => (
+            <div className={styles.Item} key={index}>
+              <img
+                alt={id}
+                className={styles.ItemIcon}
+                src={icon}
+              />
 
-          <div className={styles.ItemTitle}>
-            {title}
-          </div>
+              <div className={styles.ItemTitle}>
+                <FormattedMessage
+                  id={`cases.${id}`}
+                  defaultMessage="Title"
+                />
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </Block>
+      </Block>
+    )}
+  </FormattedMessage>
 )
 
 const mapStateToProps = ({ views }) => ({
