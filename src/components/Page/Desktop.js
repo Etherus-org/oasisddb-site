@@ -1,6 +1,8 @@
 import classNames from 'classnames';
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { connect } from 'react-redux';
+import { compose, withHandlers } from 'recompose';
 
 /** Components **/
 import Copyright from './components/Copyright';
@@ -10,9 +12,23 @@ import Subscribe from './components/Subscribe';
 
 import { COLOR } from 'components/Page';
 
+// i18n
+import { getLocales } from 'i18n';
+
+// Services
+import { getLocale, setLocale } from 'services/env';
+
+// Styles
 import styles from './Desktop.scss';
 
-const Page = ({ children, color, menu }) => {
+const Page = ({
+  children,
+  color,
+  currentLocale,
+  menu,
+
+  handleChangeLocale,
+}) => {
   const className = classNames(styles.Root, {
     [styles.RootColorDark]: color === COLOR.DARK
   });
@@ -59,21 +75,21 @@ const Page = ({ children, color, menu }) => {
           </a>
 
           <div className={styles.Language}>
-            <div className={styles.LanguageItem}>
-              RU
-            </div>
+            {getLocales().map((locale) => {
+              const itemClassNames = classNames(styles.LanguageItem, {
+                [styles.LanguageItemIsSelected]: locale === currentLocale,
+              });
 
-            <div className={styles.LanguageItem}>
-              EN
-            </div>
-
-            <div className={styles.LanguageItem}>
-              ES
-            </div>
-
-            <div className={styles.LanguageItem}>
-              CN
-            </div>
+              return (
+                <div
+                  className={itemClassNames}
+                  key={locale}
+                  onClick={() => handleChangeLocale(locale)}
+                >
+                  {locale}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -91,4 +107,15 @@ const Page = ({ children, color, menu }) => {
   );
 }
 
-export default Page;
+const mapStateToProps = (state) => ({
+  currentLocale: getLocale(state),
+});
+
+export default compose(
+  connect(mapStateToProps, { setLocale }),
+  withHandlers({
+    handleChangeLocale: ({ setLocale }) =>
+      (locale) =>
+        setLocale(locale),
+  }),
+)(Page);

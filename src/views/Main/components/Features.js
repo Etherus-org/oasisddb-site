@@ -18,7 +18,7 @@ const MainFeatures = ({ features }) => (
       <Block
         className={styles.Root}
         id="features"
-        title="Ключевые особенности OasisDDB"
+        title={title}
         >
         <div className={styles.Features}>
           {features.map(({ icon, id }, index) => (

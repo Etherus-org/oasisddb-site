@@ -87,7 +87,7 @@ export default {
   'menu.whitepaper': 'Обзор технологии (White Paper)',
 
   // Partners
-  'partners.title': '',
+  'partners.title': 'Партнеры',
 
   // Roadmap
   'roadmap.title': 'Дорожная Карта',
@@ -166,7 +166,7 @@ export default {
   // Why Us
   'why_us.title': 'Почему мы',
 
-  'why_us.mob_head': require('assets/why_us/table_mob_head.svg'),
-  'why_us.mob_body': require('assets/why_us/table_mob_body.svg'),
-  'why_us.table': require('assets/why_us/table.svg'),
+  'why_us.mob_head': require('assets/why_us/table_mob_head_ru.svg'),
+  'why_us.mob_body': require('assets/why_us/table_mob_body_ru.svg'),
+  'why_us.table': require('assets/why_us/table_ru.svg'),
 };
