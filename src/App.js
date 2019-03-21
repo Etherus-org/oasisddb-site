@@ -1,3 +1,4 @@
+import { keys } from 'lodash';
 import React from 'react';
 import { IntlProvider } from 'react-intl';
 import { connect } from 'react-redux';
@@ -15,6 +16,18 @@ import Team from 'views/Team';
 
 // Styles
 import styles from './App.scss';
+
+const importMessages = getMessages('ru');
+const json = [];
+
+keys(importMessages).forEach((key) => {
+  json.push({
+    id: key,
+    value: importMessages[key],
+  })
+});
+
+console.log(JSON.stringify(json));
 
 const App = ({
   currentLocale,

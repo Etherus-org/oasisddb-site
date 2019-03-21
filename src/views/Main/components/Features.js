@@ -58,21 +58,21 @@ const MainFeatures = ({ features }) => (
         </div>
 
         <div className={styles.Actions}>
-          <a className={styles.Action} href="/">
+          <a className={styles.Action} href="/files/yellow-paper-ru">
             <FormattedMessage
               id="common.yellowpaper"
               defaultMessage="Yellow paper"
             />
           </a>
 
-          <a className={classNames(styles.Action, styles.ActionRed)} href="/">
+          <a className={classNames(styles.Action, styles.ActionRed)} href="/files/short-guide-ru">
             <FormattedMessage
               id="common.guide"
               defaultMessage="Short guide"
             />
           </a>
 
-          <a className={styles.Action} href="/">
+          <a className={styles.Action} href="/files/white-paper-ru">
             <FormattedMessage
               id="common.whitepaper"
               defaultMessage="White paper"

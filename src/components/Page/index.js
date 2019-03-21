@@ -29,9 +29,9 @@ const menu = [
   {
     id: 'docs',
     items: [
-      { id: 'whitepaper', link: '/' },
-      { id: 'yellowpaper', external: true, link: 'https://docs.google.com/document/d/1UwaaUgunnrFpL6jetA_DdNLQsbbqBx1HLcln07kLrUw' },
-      { id: 'guide', external: true, link: 'https://cdn.ties.network/short-guide-eng.pdf' },
+      { id: 'whitepaper', link: '/files/white-paper-ru' },
+      { id: 'yellowpaper', external: true, link: '/files/yellow-paper-ru' },
+      { id: 'guide', external: true, link: '/files/short-guide-ru' },
     ],
     title: 'Документы',
   },
