@@ -25,6 +25,8 @@ export default {
     'copyright.policy': 'Private policy',
     'copyright.terms': 'Terms and conditions',
     'copyright.title': 'OasisDDB. Limited liability company.',
+
+    'empty': '_',
   
     // Features
     'features.more': 'See all features',
@@ -36,6 +38,11 @@ export default {
     'features.decentralization.title': 'DECENTRALIZATION',
     'features.modifiable.description': 'Ability to edit and delete previously posted data for their owner.',
     'features.modifiable.title': 'MODIFIABLE',
+
+    // Files
+    'files.short_guide': '/files/short-guide-en.pdf',
+    'files.yellow_paper': '/files/yellow-paper-en.pdf',
+    'files.white_paper': '/files/white-paper-en.pdf',
   
     // Footer
     'footer.video': 'Watch the video',
@@ -75,7 +82,7 @@ export default {
     'menu.about': 'About',
     'menu.blog': 'Contact',
     'menu.contacts': 'Blog',
-    'menu.docs': 'Dosc',
+    'menu.docs': 'Docs',
     'menu.faq': 'FAQ',
     'menu.features': 'Features',
     'menu.guide': 'Short Guide',  
@@ -117,7 +124,7 @@ export default {
     'roadmap.2019_q1.title': 'Q1 2019',
   
     // Subscribe
-    'subscribe.access': 'Get Early Access',
+    'subscribe.access': 'OasisDDB Client',
     'subscribe.button': 'Subscribe',
     'subscribe.email': 'Email address',
     'subscribe.title': 'Keep in touch with the latest news',

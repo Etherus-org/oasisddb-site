@@ -42,28 +42,16 @@ const MainHeader = ({
         </div>
 
         <form className={styles.Form}>
-          <FormattedMessage
-            id="subscribe.email"
-            defaultMessage="Email address"
-          >
-            {(placeholder) => (
-              <input
-                className={styles.Input}
-                name="email"
-                placeholder={placeholder}
-              />
-            )}
-          </FormattedMessage>
-
-          <button
+          <a
             className={styles.Button}
-            type="submit"
+            download
+            href="/files/Oasis-0.1.0-mac.zip"
           >
             <FormattedMessage
               id="subscribe.access"
               defaultMessage="Get Early Access"
             />
-          </button>
+          </a>
         </form>
       </div>
     </Block>

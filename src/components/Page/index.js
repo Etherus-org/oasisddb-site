@@ -29,9 +29,9 @@ const menu = [
   {
     id: 'docs',
     items: [
-      { id: 'whitepaper', link: '/files/white-paper-ru' },
-      { id: 'yellowpaper', external: true, link: '/files/yellow-paper-ru' },
-      { id: 'guide', external: true, link: '/files/short-guide-ru' },
+      { id: 'whitepaper', external: true, link: 'files.white_paper' },
+      { id: 'yellowpaper', external: true, link: 'files.yellow_paper' },
+      { id: 'guide', external: true, link: 'files.short_guide' },
     ],
     title: 'Документы',
   },

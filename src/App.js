@@ -27,12 +27,10 @@ keys(importMessages).forEach((key) => {
   })
 });
 
-console.log(JSON.stringify(json));
-
 const App = ({
   currentLocale,
 }) => (
-  <IntlProvider locale="en" messages={getMessages(currentLocale)}>
+  <IntlProvider key={currentLocale} locale="en" messages={getMessages(currentLocale)}>
     <div className={styles.Root}>
       <Route exact path={`${process.env.PUBLIC_URL}/`} component={Main} />
       <Route path={`${process.env.PUBLIC_URL}/team`} component={Team} />
@@ -44,4 +42,4 @@ const mapStateToProps = (state) => ({
   currentLocale: getLocale(state),
 });
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, null, null, { pure: false })(App);

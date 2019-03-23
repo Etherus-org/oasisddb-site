@@ -59,12 +59,19 @@ const PageMenu = ({
               defaultMessage="Link"
             >
               {(title) => (
-                createElement(link ? anchor || external ? 'a' : Link : 'div', {
-                  children: title,
-                  className: titleClassName,
-                  href: link,
-                  to: link,
-                })
+                <FormattedMessage
+                  id={link || 'empty'}
+                  defaultMessage={link}
+                >
+                  {(link) => (
+                    createElement((link && link !== '_') ? anchor || external ? 'a' : Link : 'div', {
+                      children: title,
+                      className: titleClassName,
+                      href: link,
+                      to: link,
+                    })
+                  )}
+                </FormattedMessage>
               )}
             </FormattedMessage>
 
@@ -76,13 +83,20 @@ const PageMenu = ({
                     defaultMessage="Link"
                   >
                     {(title) => (
-                      createElement(anchor || external ? 'a' : Link, {
-                        children: title,
-                        className: styles.ItemLink,
-                        key: index,
-                        href: link,
-                        to: link,
-                      })
+                      <FormattedMessage
+                        id={link || 'empty'}
+                        defaultMessage={link}
+                      >
+                        {(link) => (
+                          createElement(anchor || external ? 'a' : Link, {
+                            children: title,
+                            className: styles.ItemLink,
+                            key: index,
+                            href: link,
+                            to: link,
+                          })
+                        )}
+                      </FormattedMessage>
                     )}
                   </FormattedMessage>
                 ))}
@@ -94,6 +108,8 @@ const PageMenu = ({
     </div>
   );
 }
+
+
 
 export default compose(
   withStateHandlers(

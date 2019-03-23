@@ -12,13 +12,17 @@
 }
 
 .Button {
+  align-items: center;
   background-color: #C92A3E;
   border: 0;
   border-radius: 20px;
+  display: flex;
   color: #FFFFFF;
   font-size: 16px;
   height: 48px;
+  justify-content: center;
   margin-left: 24px;
+  text-decoration: none;
   width: 184px;
 
   &:hover {

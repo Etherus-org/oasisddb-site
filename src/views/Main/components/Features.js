@@ -58,26 +58,47 @@ const MainFeatures = ({ features }) => (
         </div>
 
         <div className={styles.Actions}>
-          <a className={styles.Action} href="/files/yellow-paper-ru">
-            <FormattedMessage
-              id="common.yellowpaper"
-              defaultMessage="Yellow paper"
-            />
-          </a>
+          <FormattedMessage
+            id="files.yellow_paper"
+            defaultMessage="/files/yellow-paper-ru.pdf"
+          >
+            {(link) => (
+              <a className={styles.Action} href={link}>
+                <FormattedMessage
+                  id="common.yellowpaper"
+                  defaultMessage="Yellow paper"
+                />
+              </a>
+            )}
+          </FormattedMessage>
 
-          <a className={classNames(styles.Action, styles.ActionRed)} href="/files/short-guide-ru">
-            <FormattedMessage
-              id="common.guide"
-              defaultMessage="Short guide"
-            />
-          </a>
+          <FormattedMessage
+            id="files.short_guide"
+            defaultMessage="/files/short-guide-ru.pdf"
+          >
+            {(link) => (
+              <a className={classNames(styles.Action, styles.ActionRed)} href={link}>
+                <FormattedMessage
+                  id="common.guide"
+                  defaultMessage="Short guide"
+                />
+              </a>
+            )}
+          </FormattedMessage>
 
-          <a className={styles.Action} href="/files/white-paper-ru">
-            <FormattedMessage
-              id="common.whitepaper"
-              defaultMessage="White paper"
-            />
-          </a>
+          <FormattedMessage
+            id="files.white_paper"
+            defaultMessage="/files/white-paper-ru.pdf"
+          >
+            {(link) => (
+              <a className={styles.Action} href={link}>
+                <FormattedMessage
+                  id="common.whitepaper"
+                  defaultMessage="White paper"
+                />
+              </a>
+            )}
+          </FormattedMessage>
         </div>
       </Block>
     )}

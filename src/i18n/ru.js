@@ -26,6 +26,8 @@ export default {
   'copyright.terms': 'Условия и положения',
   'copyright.title': 'ООО "OasisDDB"',
 
+  'empty': '_',
+
   // Features
   'features.advanced_search.description': 'Параллельная работа многих серверов обеспечивает высокую скорость обработки запросов.',
   'features.advanced_search.title': 'РАСШИРЕННЫЙ ПОИСК',
@@ -36,6 +38,11 @@ export default {
 
   'features.more': 'Посмотреть весь список',
   'features.title': 'Ключевые особенности OasisDDB',
+
+  // Files
+  'files.short_guide': '/files/short-guide-ru.pdf',
+  'files.yellow_paper': '/files/yellow-paper-ru.pdf',
+  'files.white_paper': '/files/white-paper-ru.pdf',
 
   // Footer
   'footer.video': 'Посмотреть видео',
@@ -117,7 +124,7 @@ export default {
   'roadmap.2019_q1.title': 'Q1 2019',
 
   // Subscribe
-  'subscribe.access': 'Получить доступ',
+  'subscribe.access': 'OasisDDB клиент',
   'subscribe.button': 'Подписаться',
   'subscribe.email': 'Электронная почта',
   'subscribe.title': 'Будьте в курсе последних новостей',
