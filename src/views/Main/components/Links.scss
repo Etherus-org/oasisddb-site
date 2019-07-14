@@ -1,0 +1,48 @@
+.Root {
+  background-color: #EAEEF2;
+  padding: 160px 24px 0;
+}
+
+.Icon {
+  background: #c92a3e no-repeat center center;
+  background-size: contain;
+  border-radius: 100%;
+  display: block;
+  height: 80px;
+  left: calc(50% - 40px);
+  position: absolute;
+  top: -100px;
+  width: 80px;
+
+  &Variant {
+    &Pdf {
+      background-image: url('../assets/links/pdf.png');
+    }
+    
+    &Youtube {
+      background-image: url('../assets/links/youtube.png');
+    }
+  }
+}
+
+.Item {
+  color: #2c3e4f;
+  flex: 0 0 192px;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 192px;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+  &:not(:first-child) {
+    border-left: 1px solid #fff;
+  }
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}

@@ -39,6 +39,7 @@
     "promise": "8.0.1",
     "prop-types": "^15.6.1",
     "raf": "3.4.0",
+    "rc-collapse": "^1.11.3",
     "react": "^16.3.1",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.3.1",
@@ -112,5 +113,6 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1"
-  }
+  },
+  "homepage": "https://oasisddb.com/"
 }
