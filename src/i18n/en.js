@@ -158,6 +158,11 @@ export default {
   "team.filatov.name": "Anton Filatov",
   "team.filatov.position": "Head of Software Development",
 
+  "team.karevskaya.description":
+    "He has been working as a top manager in marketing, advertising and creativity for more than 15 years. Creative Manager X5 Retail Group. Director of Marketing and Advertising Absolut Bank.",
+  "team.karevskaya.name": "Maria Karevskaya",
+  "team.karevskaya.position": "Art Director",
+
   "team.kochin.description":
     "Dmitry Kochin has strong experience in IT and is PhD in Technical Sciences. Serial entrepreneur in IT sector since 2005.He has been involved in a variety of software projects dealing with payment processing, account aggregation, computer telephony and even financial services within online games. Since 2014 he is absorbed in his study of blockchain and cryptocurrency problems.",
   "team.kochin.name": "Dmitry Kochin",

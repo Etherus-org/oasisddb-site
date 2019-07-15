@@ -27,7 +27,6 @@ const LandingMain = props => (
     <Cases />
     <Media />
     <Partners />
-    <Roadmap />
   </Page>
 );
 

@@ -114,57 +114,62 @@ const initialState = {
     { id: "2019_q1", from: "2019-01-01", to: "2019-03-31" }
   ],
   social: [
-    {
-      id: "Facebook",
-      link: "https://facebook.com",
-      title: "Facebook"
-    },
-    {
-      id: "LinkedIn",
-      link: "https://linkedin.com/",
-      title: "LinkedIn"
-    },
-    {
-      id: "Twitter",
-      link: "https://twitter.com",
-      title: "Twitter"
-    },
+    // {
+    //   id: "Facebook",
+    //   link: "https://facebook.com",
+    //   title: "Facebook"
+    // },
+    // {
+    //   id: "LinkedIn",
+    //   link: "https://linkedin.com/",
+    //   title: "LinkedIn"
+    // },
+    // {
+    //   id: "Twitter",
+    //   link: "https://twitter.com",
+    //   title: "Twitter"
+    // },
     {
       id: "YouTube",
       link: "https://www.youtube.com/channel/UC_0vG0mSFb4_LbaFzkSLT8w/",
       title: "YouTube"
     },
     {
-      id: "Reddit",
-      link: "https://reddit.com",
-      title: "Reddit"
-    },
-    {
-      id: "GitHub",
-      link: "https://github.com",
-      title: "GitHub"
-    },
-    {
-      id: "Bitcoin",
-      link: "https://facebook.com",
-      title: "Bitcoin"
+      id: "Zen",
+      link: "https://zen.yandex.ru/id/5d2a4402fbe6e700ac0d528d",
+      title: "Yandex.Zen"
     }
+    // {
+    //   id: "Reddit",
+    //   link: "https://reddit.com",
+    //   title: "Reddit"
+    // },
+    // {
+    //   id: "GitHub",
+    //   link: "https://github.com",
+    //   title: "GitHub"
+    // },
+    // {
+    //   id: "Bitcoin",
+    //   link: "https://facebook.com",
+    //   title: "Bitcoin"
+    // }
   ],
   whyNeed: [
     {
       id: "dapps",
       icon: require("../assets/why_need/daaps.svg"),
-      href: "/"
+      href: "https://drive.google.com/drive/folders/1m29E0OqehT0YQ7N1-7jHvI3XCf_FV1wv"
     },
     {
       id: "blockchain",
       icon: require("../assets/why_need/blockchains.svg"),
-      href: "/"
+      href: "https://drive.google.com/drive/folders/1m29E0OqehT0YQ7N1-7jHvI3XCf_FV1wv"
     },
     {
       id: "international",
       icon: require("../assets/why_need/international.svg"),
-      href: "/"
+      href: "https://drive.google.com/drive/folders/1m29E0OqehT0YQ7N1-7jHvI3XCf_FV1wv"
     }
   ]
 };

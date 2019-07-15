@@ -15,7 +15,6 @@ const menu = [
     id: "about",
     items: [
       { id: "features", anchor: true, link: `${process.env.PUBLIC_URL}/#features` },
-      { id: "roadmap", anchor: true, link: `${process.env.PUBLIC_URL}/#roadmap` },
       { id: "team", link: `${process.env.PUBLIC_URL}/team` }
     ]
   },

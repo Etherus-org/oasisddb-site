@@ -30,8 +30,9 @@
   flex: 0 0 192px;
   font-size: 16px;
   line-height: 24px;
+  margin: 116px 0 0;
   max-width: 192px;
-  padding: 0 16px;
+  padding: 16px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -45,4 +46,23 @@
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .Root {
+    padding: 80px 24px 0;
+  }
+
+  .Item {
+    flex: 0 0 auto;
+
+    &:not(:first-child) {
+      border: 0;
+    }
+  }
+
+  .Wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
 }

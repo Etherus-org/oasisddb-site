@@ -1,32 +1,28 @@
-import { get } from 'lodash';
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import { connect } from 'react-redux';
+import { get } from "lodash";
+import React from "react";
+import { FormattedMessage } from "react-intl";
+import { connect } from "react-redux";
 
 /** Components **/
-import Block from 'components/Block';
-import Page, { COLOR } from 'components/Page';
+import Block from "components/Block";
+import Page, { COLOR } from "components/Page";
 
-import Mate from './components/Mate';
+import Mate from "./components/Mate";
 
-import styles from './Desktop.scss';
+import styles from "./Desktop.scss";
 
 const Team = ({ team }) => (
-  <Page
-    className={styles.Root}
-    color={COLOR.DARK}
-  >
-    <FormattedMessage
-      id="team.title"
-      defaultMessage="Our Team"
-    >
-      {(title) => (
+  <Page className={styles.Root} color={COLOR.DARK}>
+    <FormattedMessage id="team.title" defaultMessage="Our Team">
+      {title => (
         <Block title={title}>
-          {team.map((mate, index) => <Mate {...mate} key={index} />)}
+          {team.map((mate, index) => (
+            <Mate {...mate} key={index} />
+          ))}
         </Block>
       )}
     </FormattedMessage>
-
+    {/* 
     <FormattedMessage
       id="advisors.title"
       defaultMessage="Advisors"
@@ -36,10 +32,10 @@ const Team = ({ team }) => (
           <div>123</div>
         </Block>
       )}
-    </FormattedMessage>
+    </FormattedMessage> */}
   </Page>
-)
+);
 
-const mapStateToProps = ({ views }) => get(views, 'team', {})
+const mapStateToProps = ({ views }) => get(views, "team", {});
 
 export default connect(mapStateToProps)(Team);

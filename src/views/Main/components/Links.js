@@ -26,11 +26,13 @@ const DATA = [
   },
   {
     icon: "Pdf",
-    title: "Презентация Oasis"
+    title: "Презентация Oasis",
+    url: "https://drive.google.com/drive/folders/1bqveBzDF_jb_y0QYB6jbGVKoG4QkONyF"
   },
   {
     icon: "Pdf",
-    title: "Onepage Oasis"
+    title: "Onepage Oasis",
+    url: "https://drive.google.com/drive/folders/1AfGEG3sELIUNmJUss2m6F_qYyLDxnuAR"
   }
 ];
 
@@ -40,7 +42,9 @@ const MainLinks = () => (
       {DATA.map(({ icon, title, url }, index) => (
         <a className={style.Item} href={url} target="_blank">
           <i className={classNames(style.Icon, style[`IconVariant${icon}`])} />
-          <FormattedMessage id={`links.${index}.title`} />
+          <span>
+            <FormattedMessage id={`links.${index}.title`} />
+          </span>
         </a>
       ))}
     </div>

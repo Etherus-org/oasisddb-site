@@ -130,6 +130,7 @@
   .Cover {
     &Video {
       max-height: 100%;
+      max-width: none;
       min-width: auto;
     }
   }

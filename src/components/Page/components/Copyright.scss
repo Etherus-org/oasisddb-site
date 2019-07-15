@@ -56,6 +56,15 @@
     }
 
     &Type {
+      &Zen {
+        background-image: url('../assets/social/dzen.png');
+        background-size: contain;
+
+        &:hover {
+          background-image: url('../assets/social/dzen_hover.png');
+        }
+      }
+
       &Facebook {
         background-image: url('../assets/social/facebook.svg');
 

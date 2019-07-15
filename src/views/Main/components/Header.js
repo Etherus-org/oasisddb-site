@@ -44,8 +44,13 @@ const MainHeader = ({ menuIsOpened }) => {
             <FormattedMessage id="faq.title" defaultMessage="Что такое Оазис?" />
           </Link>
 
-          <a className={styles.Button} download href="/files/Oasis-0.1.0-mac.zip">
-            <FormattedMessage id="subscribe.access" defaultMessage="Get Early Access" />
+          <a
+            className={styles.Button}
+            download
+            href="https://drive.google.com/drive/folders/1m29E0OqehT0YQ7N1-7jHvI3XCf_FV1wv"
+          >
+            Live Demo
+            {/* <FormattedMessage id="subscribe.demo" defaultMessage="Live Demo" /> */}
           </a>
         </form>
       </div>

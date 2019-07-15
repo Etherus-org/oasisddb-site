@@ -112,31 +112,6 @@ const ABOUT = [
 
 const Faq = () => (
   <Page color={COLOR.DARK}>
-    <FormattedMessage id="what_is.title" defaultMessage="What is Oasis?">
-      {title => (
-        <Block title={title}>
-          <div className={style.Root}>
-            <div className={style.Collapse}>
-              <Collapse defaultActiveKey={get(window, "location.hash", "#0").replace("#", "")}>
-                {ABOUT.map(({ title, url }, index) => (
-                  <Panel header={title}>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src={url}
-                      frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    />
-                  </Panel>
-                ))}
-              </Collapse>
-            </div>
-          </div>
-        </Block>
-      )}
-    </FormattedMessage>
-
     <FormattedMessage id="faq.title" defaultMessage="FAQ">
       {title => (
         <Block title={title}>
