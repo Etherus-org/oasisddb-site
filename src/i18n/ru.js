@@ -28,6 +28,10 @@ export default {
 
   empty: "_",
 
+  // Events
+  "events.more": "Все видео",
+  "events.title": "События",
+
   // FAQ
   "faq.title": "Вопрос/Ответ",
 
@@ -103,6 +107,7 @@ export default {
   "menu.blog": "Контакты",
   "menu.contacts": "Блог",
   "menu.docs": "Документы",
+  "menu.events": "События",
   "menu.faq": "FAQ",
   "menu.features": "Возможности",
   "menu.guide": "Руководство",

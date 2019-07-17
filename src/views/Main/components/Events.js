@@ -23,29 +23,33 @@ const DATA = [
 ];
 
 const MainEvents = () => (
-  <Block className={style.Root} title="События">
-    <div className={style.Wrapper}>
-      <a
-        className={style.Playlist}
-        href="https://www.youtube.com/playlist?list=PLGLl_Q2H4dLuLrp9hDCK-xys0LURzd9Nf"
-      >
-        Все видео
-      </a>
-
-      <div className={style.Container}>
-        {DATA.map(({ id, preview, title }, index) => (
+  <FormattedMessage id="events.title" defaultMessage="Event">
+    {title => (
+      <Block className={style.Root} id="events" title={title}>
+        <div className={style.Wrapper}>
           <a
-            className={style.Item}
-            href={`https://www.youtube.com/watch?v=${id}&list=PLGLl_Q2H4dLuLrp9hDCK-xys0LURzd9Nf`}
-            target="_blank"
+            className={style.Playlist}
+            href="https://www.youtube.com/playlist?list=PLGLl_Q2H4dLuLrp9hDCK-xys0LURzd9Nf"
           >
-            <img alt={title} className={style.Preview} src={preview} />
-            <div className={style.Title}>{title}</div>
+            <FormattedMessage id="events.more" defaultMessage="All videos" />
           </a>
-        ))}
-      </div>
-    </div>
-  </Block>
+
+          <div className={style.Container}>
+            {DATA.map(({ id, preview, title }, index) => (
+              <a
+                className={style.Item}
+                href={`https://www.youtube.com/watch?v=${id}&list=PLGLl_Q2H4dLuLrp9hDCK-xys0LURzd9Nf`}
+                target="_blank"
+              >
+                <img alt={title} className={style.Preview} src={preview} />
+                <div className={style.Title}>{title}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </Block>
+    )}
+  </FormattedMessage>
 );
 
 export default MainEvents;

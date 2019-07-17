@@ -28,6 +28,10 @@ export default {
 
   empty: "_",
 
+  // Events
+  "events.more": "All videos",
+  "events.title": "Events",
+
   // FAQ
   "faq.title": "FAQ",
 
@@ -102,6 +106,7 @@ export default {
   "menu.blog": "Contact",
   "menu.contacts": "Blog",
   "menu.docs": "Docs",
+  "menu.events": "Events",
   "menu.faq": "FAQ",
   "menu.features": "Features",
   "menu.guide": "Short Guide",
