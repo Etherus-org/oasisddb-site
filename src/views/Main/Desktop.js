@@ -4,6 +4,7 @@ import React from "react";
 import Page from "components/Page";
 
 import Cases from "./components/Cases";
+import Events from "./components/Events";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import HowItWorks from "./components/HowItWorks";
@@ -25,6 +26,7 @@ const LandingMain = props => (
     <HowItWorks />
     <WhyUs />
     <Cases />
+    <Events />
     <Media />
     <Partners />
   </Page>

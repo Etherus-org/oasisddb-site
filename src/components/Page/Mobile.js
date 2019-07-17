@@ -43,7 +43,6 @@ const Page = ({ children, handleMenuToggle, menu, menuIsOpened }) => {
       <div className={styles.Container}>
         {Children.map(children, child => child && cloneElement(child, { menuIsOpened }))}
 
-        <Subscribe />
         <Footer menu={menu} />
         <Copyright />
       </div>

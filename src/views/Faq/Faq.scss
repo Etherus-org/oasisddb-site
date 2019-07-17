@@ -4,6 +4,14 @@
   width: 100%;
 }
 
+.Block {
+  padding: 160px 24px 0;
+
+  &Faq {
+    padding: 80px 24px 160px;
+  }
+}
+
 .Collapse {
   width: 600px;
 }

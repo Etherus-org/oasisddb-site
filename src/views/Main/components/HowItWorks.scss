@@ -76,8 +76,36 @@
 
 @media only screen and (max-width: 768px) {
   .Action {
-    background-color: #C92A3E;
-    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 200px;
+
+    &:nth-child(1) {
+      width: 280px;
+    }
+
+    &:not(:first-child) {
+      margin: 12px 0 0;
+    }
+  }
+
+  .Actions {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 28px;
+  }
+
+  .Feature {
+    padding: 48px 0;
+
+    &:not(:first-child) {
+      border-top: 1px solid #FFFFFF;
+
+      .FeatureContainer {
+        border-left: 0;
+      }
+    }
   }
 
   .Item {
