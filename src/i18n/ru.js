@@ -104,8 +104,8 @@ export default {
 
   // Menu
   "menu.about": "О нас",
-  "menu.blog": "Контакты",
-  "menu.contacts": "Блог",
+  "menu.blog": "Блог",
+  "menu.contacts": "Контакты",
   "menu.docs": "Документы",
   "menu.events": "События",
   "menu.faq": "FAQ",
@@ -115,8 +115,8 @@ export default {
   "menu.news": "Новости",
   "menu.roadmap": "Дорожная карта",
   "menu.team": "Команда",
-  "menu.yellowpaper": "Техническое описание (Yellow Paper)",
-  "menu.whitepaper": "Обзор технологии (White Paper)",
+  "menu.yellowpaper": "Техописание (Yellow Paper)",
+  "menu.whitepaper": "Технология (White Paper)",
 
   // Partners
   "partners.title": "Партнеры",

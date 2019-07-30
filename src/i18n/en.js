@@ -1,30 +1,30 @@
 export default {
   // Common
-  "common.guide": "Short guide",
-  "common.rent": "Rent your drive",
-  "common.rent.tooltip": "Earn money with OasisDDB",
-  "common.yellowpaper": "Yellow paper",
-  "common.whitepaper": "White paper",
+  "common.guide": "Guide",
+  "common.rent": "Account",
+  "common.rent.tooltip": "Earn with OasisDDB",
+  "common.yellowpaper": "Technical papers",
+  "common.whitepaper": "Project description",
 
   // Advisors
   "advisors.title": "Advisors",
 
   // Cases
-  "cases.title": "Application cases",
+  "cases.title": "Usecases",
 
   "cases.big_data": "BIG DATA",
-  "cases.documents": "OPEN DOCUMENTS REGISTRIES",
-  "cases.knowledge": "KNOWLEDGE CASES",
-  "cases.media": "MASS MEDIA",
-  "cases.networks": "SOCIAL NETWORKS",
-  "cases.sharing": "FILE SHARING",
+  "cases.documents": "DOC FLOW",
+  "cases.knowledge": "KNOWLEDGE BASES",
+  "cases.media": "MASSMEDIA",
+  "cases.networks": "SOCIAL MEDIA",
+  "cases.sharing": "FILES EXCHANGE",
   "cases.storage": "DATA STORAGE",
 
   // Copyright
-  "copyright.questions": "Got questions?\nAsk us on our channel",
-  "copyright.policy": "Private policy",
+  "copyright.questions": "Have question left?\nAsk in our channels!",
+  "copyright.policy": "Privacy policy",
   "copyright.terms": "Terms and conditions",
-  "copyright.title": "OasisDDB. Limited liability company.",
+  "copyright.title": "OasisDDB LLC",
 
   empty: "_",
 
@@ -33,20 +33,19 @@ export default {
   "events.title": "Events",
 
   // FAQ
-  "faq.title": "FAQ",
+  "faq.title": "Question/Answer",
 
   // Features
-  "features.more": "See all features",
-  "features.title": "Key features of OasisDDB",
+  "features.more": "Check all database functions",
+  "features.title": "OasisDB general characteristics",
 
   "features.advanced_search.description":
-    "Parallel operation of many servers ensures high speed of processing requests.",
+    "Simulteneous work of multiple servers allows high speed of query processing.",
   "features.advanced_search.title": "ADVANCED SEARCH",
   "features.decentralization.description":
-    "The absence of a single center control and failure, a completely self–organized network.",
+    "Oasis network has no single center, thousands of servers are completely independant.",
   "features.decentralization.title": "DECENTRALIZATION",
-  "features.modifiable.description":
-    "Ability to edit and delete previously posted data for their owner.",
+  "features.modifiable.description": "Content owner may change and delete previously added files.",
   "features.modifiable.title": "MODIFIABLE",
 
   // Files
@@ -55,35 +54,36 @@ export default {
   "files.white_paper": "/files/white-paper-en.pdf",
 
   // Footer
-  "footer.video": "Watch the video",
+  "footer.video": "Watch video",
 
   // Header
-  "header.slogan":
-    "A public, distributed and decentralized database\nwith one common thread: trust.",
+  "header.slogan": "Oasis is decentralized - it can't be banned, restricted",
   "header.title": "Discover\nboundless opportunities\nwith OasisDDB",
 
   // How It Works
   "how_it_works.title": "How it works",
 
-  "how_it_works.download.description": "Anyone can request content and it will come together.",
-  "how_it_works.download.title": "SEARCH AND DOWNLOAD",
+  "how_it_works.download.description":
+    "Client with access rights may search, delete and even change content.",
+  "how_it_works.download.title": "SEARCH, VIEW, EDITTING",
 
-  "how_it_works.network.description": "All provided servers are combined into one system.",
-  "how_it_works.network.title": "NETWORK ARRANGEMENT",
+  "how_it_works.network.description": "All independent servers are united into a single network.",
+  "how_it_works.network.title": "SERVERS NETWORK",
 
   "how_it_works.upload.description":
-    "Anyone can post content. It is distributed across different servers.",
-  "how_it_works.upload.title": "UPLOAD",
+    "Uploaded content is automatically copied and distributed over the network.",
+  "how_it_works.upload.title": "LOADING",
 
   // Links
-  "links.0.title": "Great interview about the Oasis project",
-  "links.1.title": "Demonstration of the Oasis database",
-  "links.2.title": "Database through the eyes of the development team",
-  "links.3.title": "Oasis Presentation",
-  "links.4.title": "Oasis Onepage",
+  "links.0.title": "Oasis project interview",
+  "links.1.title": "OasisDB demonstration",
+  "links.2.title": "Database from developers perspective",
+  "links.3.title": "Oasis presentation",
+  "links.3.url": "https://drive.google.com/drive/folders/1rlcFFGesj2kllz5MS2OwQqN4kOQyjRzx",
+  "links.4.title": "Oasis Onepager",
 
   // Media
-  "media.title": "Media",
+  "media.title": "Oasis in media",
 
   "media.0.date": "01.09.2017",
   "media.0.description":
@@ -102,14 +102,14 @@ export default {
     "How do you know who to trust in the world of ICOs and cryptocurrencies - Ties.Network offers one possible solution ",
 
   // Menu
-  "menu.about": "About",
-  "menu.blog": "Contact",
-  "menu.contacts": "Blog",
-  "menu.docs": "Docs",
+  "menu.about": "About us",
+  "menu.blog": "Blog",
+  "menu.contacts": "Contacts",
+  "menu.docs": "Documents",
   "menu.events": "Events",
   "menu.faq": "FAQ",
-  "menu.features": "Features",
-  "menu.guide": "Short Guide",
+  "menu.features": "Opportunities",
+  "menu.guide": "Guide",
   "menu.media": "Media",
   "menu.news": "News",
   "menu.roadmap": "Roadmap",
@@ -118,7 +118,7 @@ export default {
   "menu.whitepaper": "White Paper",
 
   // Partners
-  "partners.title": "Partners",
+  "partners.title": "Our partners",
 
   // Roadmap
   "roadmap.title": "Roadmap",
@@ -150,10 +150,10 @@ export default {
   "roadmap.2019_q1.title": "Q1 2019",
 
   // Subscribe
-  "subscribe.access": "OasisDDB Client",
-  "subscribe.button": "Subscribe",
-  "subscribe.email": "Email address",
-  "subscribe.title": "Keep in touch with the latest news",
+  "subscribe.access": "Get access",
+  "subscribe.button": "Sign up",
+  "subscribe.email": "Email",
+  "subscribe.title": "Follow the news",
 
   // Team
   "team.title": "Our Team",
@@ -164,7 +164,7 @@ export default {
   "team.filatov.position": "Head of Software Development",
 
   "team.karevskaya.description":
-    "He has been working as a top manager in marketing, advertising and creativity for more than 15 years. Creative Manager X5 Retail Group. Director of Marketing and Advertising Absolut Bank.",
+    "Has more than 15 years of experience in marketing and advertisement high-ranking postioins. X5 Retail Group creative director. Marketing and arvertisement director in Absolute Bank.",
   "team.karevskaya.name": "Maria Karevskaya",
   "team.karevskaya.position": "Art Director",
 
@@ -195,25 +195,25 @@ export default {
   "why_need.title": "Why you really need OasisDB",
 
   "why_need.dapps.description":
-    "Ties.DB servers are completely independent, scattered across the planet and accept payment in the crypto currency (TIE-token), which gives dapps-y very flexible options for working with the network Ties.DB.",
-  "why_need.dapps.link": "BE 100% DECENTRALIZED",
+    "The data is divided into many packages, encrypted and distributed among thousands of independent computers around the world. Employees only have limited access to some pieces of information.",
+  "why_need.dapps.link": "BECOME DECENTRALIZED",
   "why_need.dapps.preface":
-    "Centralized storage solutions are vulnerable. Decentralized solutions used Today, they do not allow a quick search and modification of data.",
-  "why_need.dapps.title": "DAPPS",
+    "The risk of an attack to acquire your user personal data or you corporate secrets will always remain.",
+  "why_need.dapps.title": "DATABASE",
 
   "why_need.blockchain.description":
-    "We take from a concrete block system data encryption to generate keys in the signature and suggest that the creation of decentralized applications for This block, announcing that the data will be stored in Ties.DB.",
-  "why_need.blockchain.link": "BE 100% COMPETITIVE",
+    'Files are hidden in a special cloud and encrypted, hard drive stays clean. All is ready for "forensics"',
+  "why_need.blockchain.link": "GET COMPETITIVE",
   "why_need.blockchain.preface":
-    "Today there is no effective storage solution data that entails the difficulty of attracting and hold dApps.",
-  "why_need.blockchain.title": "BLOCKCHAINS",
+    "In many countries state agencies illegaly overtake businesses by arresting hard drives and demanding bribes.",
+  "why_need.blockchain.title": "DOCUMENTS",
 
   "why_need.international.description":
-    "Large projects can store Ties.DB file indexes, and in the future, store in Ties.DB and the files themselves. Any large project can make a fork of Ties.DB network to store data in a separate network.",
-  "why_need.international.link": "BE 100% BOUNDLESS",
+    "Sites are uploaded to OasisDB in open or encrypted manner and only key owner may view, cange or delete it.",
+  "why_need.international.link": "BECOME LIMITLESS",
   "why_need.international.preface":
-    "It is difficult to build self-service today cross-border infrastructure.",
-  "why_need.international.title": "INTERNATIONAL PROJECTS",
+    "In some countries authorities implement censorship and infringe freedom of speech.",
+  "why_need.international.title": "AVOIDING RESTRICTIONS",
 
   // Why Us
   "why_us.title": "Why us",

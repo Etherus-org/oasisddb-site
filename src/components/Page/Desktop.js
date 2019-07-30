@@ -61,13 +61,6 @@ const Page = ({
         <div className={styles.Rent}>
           <a className={styles.RentAction} href="/">
             <FormattedMessage id="common.rent" defaultMessage="Rent your drive" />
-
-            <div className={styles.RentTooltip}>
-              <FormattedMessage
-                id="common.rent.tooltip"
-                defaultMessage="Earn money with OasisDDB"
-              />
-            </div>
           </a>
 
           <div className={styles.Language}>

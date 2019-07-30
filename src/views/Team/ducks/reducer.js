@@ -18,7 +18,7 @@ const initialState = {
     },
     {
       id: "karevskaya",
-      image: require("../assets/karevskaya.jpg"),
+      image: require("../assets/karevskaya.png"),
       link: "https://www.linkedin.com/in/mariakarevskaya/"
     },
     {

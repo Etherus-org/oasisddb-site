@@ -40,12 +40,16 @@ const MainLinks = () => (
   <Block className={style.Root}>
     <div className={style.Wrapper}>
       {DATA.map(({ icon, title, url }, index) => (
-        <a className={style.Item} href={url} target="_blank">
-          <i className={classNames(style.Icon, style[`IconVariant${icon}`])} />
-          <span>
-            <FormattedMessage id={`links.${index}.title`} />
-          </span>
-        </a>
+        <FormattedMessage id={`links.${index}.url`} defaultMessage={url}>
+          {formattedUrl => (
+            <a className={style.Item} href={formattedUrl} target="_blank">
+              <i className={classNames(style.Icon, style[`IconVariant${icon}`])} />
+              <span>
+                <FormattedMessage id={`links.${index}.title`} />
+              </span>
+            </a>
+          )}
+        </FormattedMessage>
       ))}
     </div>
   </Block>

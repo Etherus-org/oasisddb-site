@@ -1,22 +1,25 @@
-import { device } from 'device.js';
+import { device } from "device.js";
 
 // Types
-import { SET_LOCALE } from './types';
+import { SET_LOCALE } from "./types";
 
 const initialState = {
   isMobile: device.mobile,
   isTablet: device.tablet,
-  locale: localStorage.getItem('locale') || 'ru',
-}
+  locale:
+    localStorage.getItem("locale") || (navigator.language || navigator.userLanguage) === "ru-RU"
+      ? "ru"
+      : "en"
+};
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case SET_LOCALE:
       return {
         ...state,
-        locale: action.locale,
+        locale: action.locale
       };
     default:
-      return state
+      return state;
   }
-}
+};

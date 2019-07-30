@@ -22,8 +22,8 @@ const menu = [
     id: "news",
     items: [
       { id: "events", anchor: true, link: `${process.env.PUBLIC_URL}/#events` },
-      { id: "media", anchor: true, link: `${process.env.PUBLIC_URL}/#media` },
-      { id: "blog", external: true, link: "https://zen.yandex.ru/id/5d2a4402fbe6e700ac0d528d" }
+      { id: "media", anchor: true, link: `${process.env.PUBLIC_URL}/#media` }
+      // { id: "blog", external: true, link: "https://zen.yandex.ru/id/5d2a4402fbe6e700ac0d528d" }
     ]
   },
   {
@@ -36,7 +36,7 @@ const menu = [
     title: "Документы"
   },
   { id: "faq", link: `${process.env.PUBLIC_URL}/faq` },
-  { id: "contacts", link: "/" }
+  { id: "blog", external: true, link: "https://zen.yandex.ru/id/5d2a4402fbe6e700ac0d528d" }
 ];
 
 const Page = ({ env: { isMobile }, ...props }) => (

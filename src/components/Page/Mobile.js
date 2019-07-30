@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React, { Children, cloneElement } from "react";
+import { FormattedMessage } from "react-intl";
 
 /** Components **/
 import Copyright from "./components/Copyright";
@@ -34,7 +35,7 @@ const Page = ({ children, handleMenuToggle, menu, menuIsOpened }) => {
 
           <div className={styles.Rent}>
             <a className={styles.RentAction} href="/">
-              Rent your drive
+              <FormattedMessage id="common.rent" defaultMessage="Rent your drive" />
             </a>
           </div>
         </div>

@@ -19,7 +19,7 @@
 .Playlist {
   color: #000;
   position: absolute;
-  left: 76px;
+  left: 52px;
   text-decoration: none;
   top: -20px;
 }
@@ -39,4 +39,15 @@
   justify-content: center;
   position: relative;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .Item {
+    flex: 0 0 100%;
+    margin: 24px 0 0;
+  }
+
+  .Playlist {
+    left: 0;
+  }
 }

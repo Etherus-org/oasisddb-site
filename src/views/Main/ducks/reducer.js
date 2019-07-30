@@ -43,6 +43,12 @@ const initialState = {
   ],
   partners: [
     {
+      link:
+        "https://journal.klooway.bet/blokcheyn-kak-budushchee-tekhnologicheskiy-proriv-v-sfere-onlayn-industriy-i-ne-tolko-uzhe-ne-za-gorami",
+      src: require("../assets/partners/kloowaybet.png"),
+      title: "KLOOWAYBET"
+    },
+    {
       link: "https://diwtoken.com/",
       src: require("../assets/partners/diw.png"),
       title: "DIW"
