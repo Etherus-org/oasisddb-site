@@ -130,21 +130,21 @@ const initialState = {
     //   link: "https://linkedin.com/",
     //   title: "LinkedIn"
     // },
-    // {
-    //   id: "Twitter",
-    //   link: "https://twitter.com",
-    //   title: "Twitter"
-    // },
+    {
+      id: "Twitter",
+      link: "https://twitter.com/oasisddb",
+      title: "Twitter"
+    },
     {
       id: "YouTube",
-      link: "https://www.youtube.com/channel/UC_0vG0mSFb4_LbaFzkSLT8w/",
+      link: "https://www.youtube.com/c/OasisDDB",
       title: "YouTube"
     },
     {
       id: "Zen",
       link: "https://zen.yandex.ru/id/5d2a4402fbe6e700ac0d528d",
       title: "Yandex.Zen"
-    }
+    },
     // {
     //   id: "Reddit",
     //   link: "https://reddit.com",

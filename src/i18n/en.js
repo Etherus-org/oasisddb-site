@@ -76,11 +76,15 @@ export default {
 
   // Links
   "links.0.title": "Oasis project interview",
+  // "links.0.url": "/",
   "links.1.title": "OasisDB demonstration",
+  // "links.1.url": "/",
   "links.2.title": "Database from developers perspective",
+  // "links.2.url": "/",
   "links.3.title": "Oasis presentation",
   "links.3.url": "https://drive.google.com/drive/folders/1rlcFFGesj2kllz5MS2OwQqN4kOQyjRzx",
   "links.4.title": "Oasis Onepager",
+  "links.4.url": "https://drive.google.com/drive/folders/1HqxrACOFQELmWZCdlrj-nngCRnEuSea8",
 
   // Media
   "media.title": "Oasis in media",

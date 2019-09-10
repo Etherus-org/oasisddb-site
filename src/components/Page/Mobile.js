@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import React, { Children, cloneElement } from "react";
 import { FormattedMessage } from "react-intl";
+import { connect } from "react-redux";
+import { compose, withHandlers } from "recompose";
 
 /** Components **/
 import Copyright from "./components/Copyright";
@@ -8,9 +10,22 @@ import Footer from "./components/Footer";
 import Menu, { VARIANT } from "./components/Menu";
 import Subscribe from "./components/Subscribe";
 
+// i18n
+import { getLocales } from "i18n";
+
+// Services
+import { getLocale, setLocale } from "services/env";
+
 import styles from "./Mobile.scss";
 
-const Page = ({ children, handleMenuToggle, menu, menuIsOpened }) => {
+const Page = ({
+  children,
+  currentLocale,
+  handleChangeLocale,
+  handleMenuToggle,
+  menu,
+  menuIsOpened
+}) => {
   const className = classNames(styles.Root, {
     [styles.RootWithMenu]: menuIsOpened
   });
@@ -24,6 +39,24 @@ const Page = ({ children, handleMenuToggle, menu, menuIsOpened }) => {
 
         <div className={styles.HeaderContainer}>
           <img alt="OasisDDB" className={styles.HeaderLogo} src={require("./assets/logo.svg")} />
+
+          <div className={styles.Language}>
+            {getLocales().map(locale => {
+              const itemClassNames = classNames(styles.LanguageItem, {
+                [styles.LanguageItemIsSelected]: locale === currentLocale
+              });
+
+              return (
+                <div
+                  className={itemClassNames}
+                  key={locale}
+                  onClick={() => handleChangeLocale(locale)}
+                >
+                  {locale}
+                </div>
+              );
+            })}
+          </div>
 
           <button className={styles.HeaderBurger} onClick={handleMenuToggle} />
         </div>
@@ -51,4 +84,16 @@ const Page = ({ children, handleMenuToggle, menu, menuIsOpened }) => {
   );
 };
 
-export default Page;
+const mapStateToProps = state => ({
+  currentLocale: getLocale(state)
+});
+
+export default compose(
+  connect(
+    mapStateToProps,
+    { setLocale }
+  ),
+  withHandlers({
+    handleChangeLocale: ({ setLocale }) => locale => setLocale(locale)
+  })
+)(Page);

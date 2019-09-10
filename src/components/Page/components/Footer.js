@@ -7,6 +7,7 @@ import Block from 'components/Block';
 import Menu, { VARIANT } from './Menu';
 
 import styles from './Footer.scss';
+import style from "../../../views/Main/components/Events.scss";
 
 const PageFooter = ({ env: { isMobile }, menu }) => (
   <Block className={styles.Root}>
@@ -22,12 +23,19 @@ const PageFooter = ({ env: { isMobile }, menu }) => (
       </div>
 
       <div className={styles.Right}>
-        <FormattedMessage
-          id="footer.video"
-          defaultMessage="Watch the Video"
-        />
-
-        <div className={styles.Video} />
+        <FormattedMessage id="footer.video.id" defaultMessage={null}>
+          {(id) => id !== 'footer.video.id' && (
+            <div className={styles.Video}>
+              <a href={`https://youtu.be/${id}`} target="_blank" rel="noopener noreferrer">
+                <img
+                  alt="Oasis promo"
+                  className={style.Preview}
+                  src={`http://i3.ytimg.com/vi/${id}/maxresdefault.jpg`}
+                />
+              </a>
+            </div>
+          )}
+        </FormattedMessage>
       </div>
     </div>
   </Block>

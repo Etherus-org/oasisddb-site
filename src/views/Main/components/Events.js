@@ -9,12 +9,15 @@ import style from "./Events.scss";
 
 const DATA = [
   {
+    id: '_Z-TqcgLKdg',
+    title: 'Презентация Альфа Версии базы данных OasisDDB Казань 2019',
+  },
+  {
     id: "NQ4bqk2OgRc",
     title: "КАЗАНЬ, 9 августа: Что такое Оазис?"
   },
   {
     id: "92jaxAXm3oo",
-
     title: "Подписание договора о сотрудничестве между Оазис и KloowayBet"
   }
 ];

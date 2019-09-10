@@ -78,6 +78,36 @@
   }
 }
 
+.Language {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0 0;
+
+  &Item {
+    opacity: .6;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    &:not(:first-child) {
+      margin: 0 0 0 12px;
+    }
+
+    &Is {
+      &Selected {
+        font-weight: 700;
+        opacity: 1;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
 .Menu {
   flex: 1 1 auto;
 }

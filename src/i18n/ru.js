@@ -56,6 +56,7 @@ export default {
 
   // Footer
   "footer.video": "Посмотреть видео",
+  "footer.video.id": "p40J9edhtcY",
 
   // Header
   "header.slogan":
@@ -77,11 +78,18 @@ export default {
   "how_it_works.upload.title": "ЗАГРУЗКА",
 
   // Links
-  "links.0.title": "Большое интервью о проекте Oasis",
-  "links.1.title": "Демонстрация работы базы данных Oasis",
-  "links.2.title": "База данных глазами команды разработчиков",
-  "links.3.title": "Презентация Oasis",
-  "links.4.title": "Onepage Oasis",
+  "links.0.title": "OasisDDB  промо-ролик",
+  "links.0.url": "https://youtu.be/p40J9edhtcY",
+  "links.1.title": "Большое интервью о проекте Oasis",
+  "links.1.url": "https://youtu.be/XZtVJiHo-1g",
+  "links.2.title": "Демонстрация работы базы данных Oasis",
+  "links.2.url": "https://youtu.be/OZVlpzFfLEM",
+  "links.3.title": "База данных глазами команды разработчиков",
+  "links.3.url": "https://youtu.be/ojCFwe8YhI0",
+  "links.4.title": "Презентация Oasis",
+  "links.4.url": "https://drive.google.com/drive/folders/1bqveBzDF_jb_y0QYB6jbGVKoG4QkONyF",
+  "links.5.title": "Onepage Oasis",
+  "links.5.url": "https://drive.google.com/drive/folders/1AfGEG3sELIUNmJUss2m6F_qYyLDxnuAR",
 
   // Media
   "media.title": "СМИ пишут о нас",

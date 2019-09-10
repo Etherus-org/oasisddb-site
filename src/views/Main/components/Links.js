@@ -11,6 +11,11 @@ import style from "./Links.scss";
 const DATA = [
   {
     icon: "Youtube",
+    title: "Промо",
+    url: "https://youtu.be/XZtVJiHo-1g"
+  },
+  {
+    icon: "Youtube",
     title: "Большое интервью о проекте Oasis",
     url: "https://youtu.be/XZtVJiHo-1g"
   },
@@ -40,10 +45,11 @@ const MainLinks = () => (
   <Block className={style.Root}>
     <div className={style.Wrapper}>
       {DATA.map(({ icon, title, url }, index) => (
-        <FormattedMessage id={`links.${index}.url`} defaultMessage={url}>
-          {formattedUrl => (
+        <FormattedMessage id={`links.${index}.url`} defaultMessage="/">
+          {(formattedUrl: string): React.Element<'a'> => formattedUrl !== '/' && (
             <a className={style.Item} href={formattedUrl} target="_blank">
               <i className={classNames(style.Icon, style[`IconVariant${icon}`])} />
+              {console.log(formattedUrl)}
               <span>
                 <FormattedMessage id={`links.${index}.title`} />
               </span>
